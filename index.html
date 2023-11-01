@@ -107,7 +107,6 @@ th, td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
-  user-select: none; /* Prevent text selection in table cells */
 }
 
 
@@ -120,6 +119,7 @@ td {
 /* Set the desired fixed width for the rest of the data cells */
 td:not(:first-child) {
 text-align: center;
+user-select: none; /* Prevent text selection in table cells */
 
 }
 
