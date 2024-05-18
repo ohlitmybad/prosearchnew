@@ -22,6 +22,7 @@
 
 body {
     background-color: white;
+    
   }
 
 button {
@@ -37,12 +38,6 @@ Height: 30px;
   cursor: pointer;
 }
 
-
-@media (max-width: 767px) {
-  .button-6 {
-    left: 4.1%;
-  }
-}
 
 
 /* Add custom CSS to style the layout */
@@ -65,7 +60,7 @@ font-size: 12px;
 }
 
 .inputs input {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
    
@@ -80,16 +75,16 @@ label {
 }
 
 button {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 
 #tableWrapper {
   width: 70%;
   position: absolute;
-  top: 40px;
+  top: 35px;
   right: 2.5%;
-  max-height: 697px; /* Set the desired fixed height */
+  max-height: 645px; /* Set the desired fixed height */
   overflow: auto;
 }
 
@@ -119,7 +114,7 @@ td {
 /* Set the desired fixed width for the rest of the data cells */
 td:not(:first-child) {
 text-align: center;
-user-select: none; /* Prevent text selection in table cells */
+  user-select: none; /* Prevent text selection in table cells */
 
 }
 
@@ -218,12 +213,22 @@ body.dark-mode input {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
   }
 
-@media (max-width: 767px) {
+  @media (max-width: 767px) {
   .dark-mode-toggle {
     left: 11.1%;
   }
+  #tableWrapper {
+  max-height: 950px; /* Set the desired fixed height */
+  width: 72.8%;
+}
+.inputs {
+  width: 10px;
+ 
+}
+
 }
 
 .dark-mode-toggle .toggle-icon::before {
@@ -266,7 +271,23 @@ color: red;
     background-color: #0F0F0E;
   }
 
+  select {
+    
+    padding: 4px 6px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
 
+
+input {
+    
+    padding: 4px 6px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 </style>
 
@@ -276,68 +297,62 @@ color: red;
 	
 </head>
 
-<body><br>
+<body>
+
   <script type="text/javascript">document.body.style.visibility="hidden";</script><div id="SFctr" data-org="31002" data-mfl="64c215764c0b6076026762a3"><div style="clear:both"></div></div><script type="text/javascript" src="https://cdn.membershipworks.com/mfl.js"></script>
- 
 
 
 <div class="container">
   <div class="inputs">
   <form id="searchForm">
     <select id="datasetSelector">
-      <option value="dataset1">GK</option>
-      <option value="dataset2">CB</option>
-      <option value="dataset3">FB</option>
-      <option value="dataset4">CM</option>
-      <option value="dataset5">FW</option>
-      <option value="dataset6">ST</option>
+      <option value="dataset1">Goalkeepers</option>
+      <option value="dataset2">Centre-backs</option>
+      <option value="dataset3">Full-backs</option>
+      <option value="dataset4">Midfielders</option>
+      <option value="dataset5">Wingers</option>
+      <option value="dataset6">Strikers</option>
       <!-- Add more options for additional datasets if needed -->
     </select>
 
     <select id="league">
-      <option value="All">All Leagues</option>
-      <option value="Top 5 Leagues">Top 5 Leagues</option>
-      <option value="Top 7 Leagues">Top 7 Leagues</option>
-      <option value="Premier League">Premier League</option>
-      <option value="La Liga">La Liga</option>
-      <option value="Bundesliga">Bundesliga</option>
-      <option value="Serie A">Serie A</option>
-      <option value="Ligue 1">Ligue 1</option>
-      <option value="Eredivisie">Eredivisie</option>
-      <option value="Liga Portugal">Liga Portugal</option>
-      <option value="Non Top 7 Leagues">Non Top 7 Leagues</option>
-      <option value="South America">South America</option>
-      <option value="Scandinavia">Scandinavia</option>
-      <option value="Balkans">Eastern Europe</option>
-      <option value="Top 5 Leagues - 2nd Div.">Top 5 Leagues - 2nd Div.</option>
-      <option value="Scotland Premiership">Scotland Premiership</option>
-      <option value="Belgium Pro League">Belgium Pro League</option>
-      <option value="Swiss Super League">Swiss Super League</option>
-      <option value="Austrian Bundesliga">Austrian Bundesliga</option>
-      <option value="Süper Lig">Süper Lig</option>
-      <option value="Saudi Pro League">Saudi Pro League</option>
-      <option value="Brazil Serie A">Brazil Serie A</option>
-      <option value="Argentina Primera">Argentina Primera</option>
-      <option value="Uruguay Primera">Uruguay Primera</option>
-      <option value="LigaMX">LigaMX</option>
-      <option value="MLS">MLS</option>
-      <option value="K League 1">K League 1</option>
-      <option value="J1 League">J1 League</option>
-      <option value="Norway Eliteserien">Norway Eliteserien</option>
-      <option value="Denmark Superliga">Denmark Superliga</option>
-      <option value="Sweden Allsvenskan">Sweden Allsvenskan</option>
-      <option value="Czech Fortuna Liga">Czech Fortuna Liga</option>
-      <option value="Serbia SuperLiga">Serbia SuperLiga</option>
-      <option value="Croatia HNL">Croatia HNL</option>
-      <option value="Championship">Championship</option>
-      <option value="Segunda Division">Segunda Division</option>
-      <option value="Bundesliga 2">Bundesliga 2</option>
-      <option value="Serie B">Serie B</option>
-      <option value="Ligue 2">Ligue 2</option>            
+      <option value="All">🌎 All Leagues</option>
+      <option value="Premier League">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</option>
+<option value="La Liga">🇪🇸 La Liga</option>
+<option value="Bundesliga">🇩🇪 Bundesliga</option>
+<option value="Serie A">🇮🇹 Serie A</option> 
+<option value="Ligue 1">🇫🇷 Ligue 1</option>
+<option value="Liga Portugal">🇵🇹 Liga Portugal</option>
+<option value="Eredivisie">🇳🇱 Eredivisie</option>
+<option value="Top 5 Leagues">🇪🇺 Top 5 Leagues</option>
+<option value="Top 7 Leagues">🇪🇺 Top 7 Leagues</option>
+<option value="Belgium Pro League">🇧🇪 Belgium</option>
+<option value="Scotland Premiership">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</option>
+<option value="Austrian Bundesliga">🇦🇹 Austria</option>
+<option value="Swiss Super League">🇨🇭 Switzerland</option>      
+<option value="Süper Lig">🇹🇷 Turkey</option>
+<option value="Denmark Superliga">🇩🇰 Denmark</option>
+<option value="Sweden Allsvenskan">🇸🇪 Sweden</option>
+<option value="Norway Eliteserien">🇳🇴 Norway</option>
+<option value="Croatia HNL">🇭🇷 Croatia</option>
+<option value="Serbia SuperLiga">🇷🇸 Serbia</option>
+<option value="Czech Fortuna Liga">🇨🇿 Czech Republic</option>
+<option value="Saudi Pro League">🇸🇦 Saudi Arabia</option>
+<option value="J1 League">🇯🇵 Japan</option>
+<option value="K League 1">🇰🇷 Korea</option>
+<option value="MLS">🇺🇸 United States</option>
+<option value="LigaMX">🇲🇽 Mexico</option>
+<option value="Brazil Serie A">🇧🇷 Brazil</option>
+<option value="Argentina Primera">🇦🇷 Argentina</option>
+<option value="Uruguay Primera">🇺🇾 Uruguay</option>
+<option value="Championship">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Championship</option>
+<option value="Segunda Division">🇪🇸 Spain Segunda</option>
+<option value="Serie B">🇮🇹 Serie B</option>
+<option value="Bundesliga 2">🇩🇪 2. Bundesliga</option>
+<option value="Ligue 2">🇫🇷 Ligue 2</option>            
     
     </select>
 
-    <h3></h3>
     <label for="defensiveActions">Defensive Actions</label>
     <input type="number" id="defensiveActionsLow" min="0" max="100" placeholder="Percentile 0-100">
 
