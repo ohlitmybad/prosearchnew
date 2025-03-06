@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>	
@@ -330,100 +327,97 @@ body.dark-mode #SFctr td {
 <div class="container">
   <div class="inputs">
   <form id="searchForm">
-    <select id="datasetSelector">
+    <select id="datasetSelector" data-i18n="selectors.dataset">
       <option value="dataset1">Goalkeepers</option>
       <option value="dataset2">Centre-backs</option>
       <option value="dataset3">Full-backs</option>
       <option value="dataset4">Midfielders</option>
       <option value="dataset5">Wingers</option>
       <option value="dataset6">Strikers</option>
-      <!-- Add more options for additional datasets if needed -->
     </select>
 
     <select id="league">
-      <option value="All">🌎 All Leagues</option>
-	    <option value="Top 5 Leagues">🇪🇺 Top 5 Leagues</option>
-<option value="Top 7 Leagues">🇪🇺 Top 7 Leagues</option>
+      <option value="All" data-i18n="league.all">🌎 All Leagues</option>
+      <option value="Top 5 Leagues" data-i18n="league.top5">🇪🇺 Top 5 Leagues</option>
+      <option value="Top 7 Leagues" data-i18n="league.top7">🇪🇺 Top 7 Leagues</option>
       <option value="Premier League">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</option>
-<option value="La Liga">🇪🇸 La Liga</option>
-<option value="Bundesliga">🇩🇪 Bundesliga</option>
-<option value="Serie A">🇮🇹 Serie A</option> 
-<option value="Ligue 1">🇫🇷 Ligue 1</option>
-<option value="Liga Portugal">🇵🇹 Liga Portugal</option>
-<option value="Eredivisie">🇳🇱 Eredivisie</option>
-<option value="Belgium Pro League">🇧🇪 Belgium</option>
-<option value="Scotland Premiership">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</option>
-<option value="Austrian Bundesliga">🇦🇹 Austria</option>
-<option value="Swiss Super League">🇨🇭 Switzerland</option>      
-<option value="Süper Lig">🇹🇷 Türkiye</option>
-<option value="Denmark Superliga">🇩🇰 Denmark</option>
-<option value="Sweden Allsvenskan">🇸🇪 Sweden</option>
-<option value="Norway Eliteserien">🇳🇴 Norway</option>
-<option value="Croatia HNL">🇭🇷 Croatia</option>
-<option value="Serbia SuperLiga">🇷🇸 Serbia</option>
-<option value="Czech Fortuna Liga">🇨🇿 Czech Republic</option>
-<option value="Poland">🇵🇱 Poland</option>
-<option value="Ukraine">🇺🇦 Ukraine</option>
-<option value="Russia">🇷🇺 Russia</option>
-<option value="Greece">🇬🇷 Greece</option>
-<option value="Israel">🇮🇱 Israel</option>
-<option value="J1 League">🇯🇵 Japan</option>
-<option value="K League 1">🇰🇷 Korea</option>
-<option value="Saudi Pro League">🇸🇦 Saudi Arabia</option>
-<option value="MLS">🇺🇸 United States</option>
-<option value="LigaMX">🇲🇽 Mexico</option>
-<option value="Brazil Serie A">🇧🇷 Brazil</option>
-<option value="Argentina Primera">🇦🇷 Argentina</option>
-<option value="Uruguay Primera">🇺🇾 Uruguay</option>
-<option value="Chile">🇨🇱 Chile</option>
-<option value="Colombia">🇨🇴 Colombia</option>
-<option value="Ecuador">🇪🇨 Ecuador</option>
-<option value="Paraguay">🇵🇾 Paraguay</option>
-<option value="Championship">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Championship</option>
-<option value="Segunda Division">🇪🇸 Spain Segunda</option>
-<option value="Serie B">🇮🇹 Serie B</option>
-<option value="Bundesliga 2">🇩🇪 2. Bundesliga</option>
-<option value="Ligue 2">🇫🇷 Ligue 2</option>  
-<option value="Non Top 7 Leagues">🌍 Outside Top 7</option>
-<option value="South America">🌎 South America</option>
-<option value="Scandinavia">🌍 Scandinavia</option>
-<option value="Balkans">🌍 Eastern Europe</option>
-    
+      <option value="La Liga">🇪🇸 La Liga</option>
+      <option value="Bundesliga">🇩🇪 Bundesliga</option>
+      <option value="Serie A">🇮🇹 Serie A</option> 
+      <option value="Ligue 1">🇫🇷 Ligue 1</option>
+      <option value="Liga Portugal">🇵🇹 Liga Portugal</option>
+      <option value="Eredivisie">🇳🇱 Eredivisie</option>
+      <option value="Belgium Pro League">🇧🇪 Belgium</option>
+      <option value="Scotland Premiership">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</option>
+      <option value="Austrian Bundesliga">🇦🇹 Austria</option>
+      <option value="Swiss Super League">🇨🇭 Switzerland</option>      
+      <option value="Süper Lig">🇹🇷 Türkiye</option>
+      <option value="Denmark Superliga">🇩🇰 Denmark</option>
+      <option value="Sweden Allsvenskan">🇸🇪 Sweden</option>
+      <option value="Norway Eliteserien">🇳🇴 Norway</option>
+      <option value="Croatia HNL">🇭🇷 Croatia</option>
+      <option value="Serbia SuperLiga">🇷🇸 Serbia</option>
+      <option value="Czech Fortuna Liga">🇨🇿 Czech Republic</option>
+      <option value="Poland">🇵🇱 Poland</option>
+      <option value="Ukraine">🇺🇦 Ukraine</option>
+      <option value="Russia">🇷🇺 Russia</option>
+      <option value="Greece">🇬🇷 Greece</option>
+      <option value="Israel">🇮🇱 Israel</option>
+      <option value="J1 League">🇯🇵 Japan</option>
+      <option value="K League 1">🇰🇷 Korea</option>
+      <option value="Saudi Pro League">🇸🇦 Saudi Arabia</option>
+      <option value="MLS">🇺🇸 United States</option>
+      <option value="LigaMX">🇲🇽 Mexico</option>
+      <option value="Brazil Serie A">🇧🇷 Brazil</option>
+      <option value="Argentina Primera">🇦🇷 Argentina</option>
+      <option value="Uruguay Primera">🇺🇾 Uruguay</option>
+      <option value="Chile">🇨🇱 Chile</option>
+      <option value="Colombia">🇨🇴 Colombia</option>
+      <option value="Ecuador">🇪🇨 Ecuador</option>
+      <option value="Paraguay">🇵🇾 Paraguay</option>
+      <option value="Championship">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Championship</option>
+      <option value="Segunda Division">🇪🇸 Spain Segunda</option>
+      <option value="Serie B">🇮🇹 Serie B</option>
+      <option value="Bundesliga 2">🇩🇪 2. Bundesliga</option>
+      <option value="Ligue 2">🇫🇷 Ligue 2</option>  
+      <option value="Non Top 7 Leagues">🌍 Outside Top 7</option>
+      <option value="South America">🌎 South America</option>
+      <option value="Scandinavia">🌍 Scandinavia</option>
+      <option value="Balkans">🌍 Eastern Europe</option>
     </select>
 
-    <label for="defensiveActions">Defensive Actions</label>
+    <label for="defensiveActions" data-i18n="metrics.gk.def_actions">Defensive Actions</label>
     <input type="number" id="defensiveActionsLow" min="0" max="100" placeholder="Percentile 0-100">
 
-    <label for="aerialsContested">Aerials Contested</label>
+    <label for="aerialsContested" data-i18n="metrics.gk.aerials">Aerials Contested</label>
     <input type="number" id="aerialsContestedLow" min="0" max="100" placeholder="Percentile 0-100">
 
-    <label for="exitLine">Exit Line</label>
+    <label for="exitLine" data-i18n="metrics.gk.exit_line">Exit Line</label>
     <input type="number" id="exitLineLow" min="0" max="100" placeholder="Percentile 0-100">
 
-    <label for="passes">Passes</label>
+    <label for="passes" data-i18n="metrics.gk.passes">Passes</label>
     <input type="number" id="passesLow" min="0" max="100" placeholder="Percentile 0-100">
 
-    <label for="longPassPercentage">Long Pass %</label>
+    <label for="longPassPercentage" data-i18n="metrics.gk.long_pass">Long Pass %</label>
     <input type="number" id="longPassPercentageLow" min="0" max="100" placeholder="Percentile 0-100">
 
-    <label for="shortPassPercentage">Short Pass %</label>
+    <label for="shortPassPercentage" data-i18n="metrics.gk.short_pass">Short Pass %</label>
     <input type="number" id="shortPassPercentageLow" min="0" max="100" placeholder="Percentile 0-100">
 
-    <label for="psxg">PSxG - GA</label>
+    <label for="psxg" data-i18n="metrics.gk.psxg_ga">PSxG - GA</label>
     <input type="number" id="psxgLow" min="0" max="100" placeholder="Percentile 0-100">
 
- 
-    <label for="ageLow">Age</label>
+    <label for="ageLow" data-i18n="search.age">Age</label>
     <input type="number" id="ageLow" min="0" placeholder="15">
     <label for="ageHigh"></label>
     <input type="number" id="ageHigh" min="0" placeholder="45">
 
-    <label for="minutesPlayedLow">Minutes Played</label>
+    <label for="minutesPlayedLow" data-i18n="search.minutes">Minutes Played</label>
     <input type="number" id="minutesPlayedLow" min="0" placeholder="0">
     <label for="minutesPlayedHigh"></label>
     <input type="number" id="minutesPlayedHigh" min="0" placeholder="10,000">
 
-    <button type="submit">Search</button>
+    <button type="submit" data-i18n="search.button">Search</button>
   </form>
   </div>
 </div>
@@ -736,8 +730,1869 @@ const allData1 = [];
 
     ]
 
-const _0x465e75=_0x4820;(function(_0x6854fc,_0x1dae7c){const _0x1e3a73=_0x4820,_0x213456=_0x6854fc();while(!![]){try{const _0x6df4dd=-parseInt(_0x1e3a73(0x229))/0x1+-parseInt(_0x1e3a73(0x226))/0x2*(parseInt(_0x1e3a73(0x244))/0x3)+parseInt(_0x1e3a73(0x277))/0x4*(-parseInt(_0x1e3a73(0x24e))/0x5)+-parseInt(_0x1e3a73(0x23d))/0x6*(-parseInt(_0x1e3a73(0x20b))/0x7)+-parseInt(_0x1e3a73(0x254))/0x8*(parseInt(_0x1e3a73(0x210))/0x9)+-parseInt(_0x1e3a73(0x22c))/0xa+parseInt(_0x1e3a73(0x1fd))/0xb;if(_0x6df4dd===_0x1dae7c)break;else _0x213456['push'](_0x213456['shift']());}catch(_0x5e72f4){_0x213456['push'](_0x213456['shift']());}}}(_0x2a95,0x6b6f3));const fetchPromises1=urls1['map'](_0x43e115=>fetch(_0x43e115)[_0x465e75(0x1f4)](_0x55b4ee=>_0x55b4ee['arrayBuffer']())),fetchPromises2=urls2[_0x465e75(0x203)](_0x4f8635=>fetch(_0x4f8635)['then'](_0x585695=>_0x585695[_0x465e75(0x1f0)]()));function _0x2a95(){const _0x2195d7=['5448825xhBQGE','forEach','color','all','Ukraine','add','tableWrapper','Serie\x20A','Sheets','aerialsContestedLow','thead','Forward\x20passes','Serie\x20B','createElement','entries','Bundesliga\x202','Argentina\x20Primera','concat','indexOf','ageHigh','Chile','Bundesliga','946tjLFgq','Balkans','searchForm','341832NRtlmp','Scandinavia','dataset1','5520070LquouL','SheetNames','Forward\x20pass%','Top\x207\x20Leagues','Short\x20pass%','dataset2','Duel%','Greece','Passes','Cross%','Exit\x20line','minutesPlayedHigh','table','Off\x20actions','LigaMX','splice','\x20min</span>','862566cxDRWI','Belgium\x20Pro\x20League','Liga\x20Portugal','click','Segunda\x20Division','Israel','Ecuador','4467JBJeip','K\x20League\x201','Serbia\x20SuperLiga','slice','value','PSxG\x20-\x20GA','Russia','Def\x20actions','array','addEventListener','685770BgjfIJ','minutesPlayedLow','Austrian\x20Bundesliga','querySelector','longPassPercentageLow','cursor','8xhziPk','innerHTML','change','sort','exitLineLow','Colombia','dataset6','toFixed','getElementById','South\x20America','Czech\x20Fortuna\x20Liga','NPG','textContent','push','join','Top\x205\x20Leagues','Ligue\x201','Championship','Prog\x20carries','sheet_to_json','Uruguay\x20Primera','league','resultsContainer','Prog\x20passes','tbody','Dribbles','La\x20Liga','preventDefault','Saudi\x20Pro\x20League','Denmark\x20Superliga','no-results-message','Süper\x20Lig','Norway\x20Eliteserien','Unknown\x20League','defensiveActionsLow','12wKUZgE','querySelectorAll','Croatia\x20HNL','Top\x205\x20Leagues\x20-\x202nd\x20Div.','arrayBuffer','Brazil\x20Serie\x20A','utils','dataset3','then','pointer','includes','psxgLow','classList','Paraguay','appendChild','Pass\x20to\x20pen','Sweden\x20Allsvenskan','32024443TpHyNC','dataset4','read','submit','length','Scotland\x20Premiership','map','Aerial%','datasetSelector','unshift','dataset5','pop','split','All','7qpVlCu','Premier\x20League','style','Def\x20duel%','Key\x20passes'];_0x2a95=function(){return _0x2195d7;};return _0x2a95();}function processAndStoreData1(_0x4d4ede){const _0x515a70=_0x465e75;let _0x4c2b8a=0x1;_0x4d4ede[_0x515a70(0x211)](_0xbae21=>{const _0x9327e9=_0x515a70,_0x24fcd7=XLSX[_0x9327e9(0x1ff)](new Uint8Array(_0xbae21),{'type':_0x9327e9(0x24c)}),_0x296d12=_0x24fcd7[_0x9327e9(0x22d)][0x0],_0x3d02e8=_0x24fcd7[_0x9327e9(0x218)][_0x296d12],_0x1290ed=XLSX[_0x9327e9(0x1f2)][_0x9327e9(0x267)](_0x3d02e8,{'header':0x1}),_0x313f2d=_0x1290ed[_0x9327e9(0x247)](0x1);_0x313f2d['forEach'](_0x3c906b=>{const _0x8f681d=_0x9327e9;_0x3c906b[_0x8f681d(0x206)](''+_0x4c2b8a++),_0x3c906b['splice'](0xc,0x0,_0x3c906b[_0x8f681d(0x23b)](0x4,0x1)[0x0]),_0x3c906b['splice'](0x7,0x0,_0x3c906b[_0x8f681d(0x23b)](0xb,0x1)[0x0]),_0x3c906b[_0x8f681d(0x23b)](0x9,0x0,_0x3c906b['splice'](0xa,0x1)[0x0]),_0x3c906b[0xf]=''+_0x3c906b[0x1],_0x3c906b[_0x8f681d(0x23b)](0x10,0x1);const _0x53bde2=[_0x3c906b[0x0],_0x3c906b[0xf],_0x3c906b[0x2],_0x3c906b[0x4],_0x3c906b[0x5],_0x3c906b[0xb],_0x3c906b[0x6],_0x3c906b[0xa],_0x3c906b[0x8],_0x3c906b[0x9],_0x3c906b[0x7],_0x3c906b[0x3]];allData1[_0x8f681d(0x261)](_0x53bde2);});function _0x33740e(_0x320e2c){const _0x47e9b8=_0x9327e9;for(const [_0x4f5b83,_0x2715d7]of Object[_0x47e9b8(0x21e)](leagues)){if(_0x2715d7['includes'](_0x320e2c))return _0x4f5b83;}return _0x47e9b8(0x275);}const _0x398618=[];allData1[_0x9327e9(0x211)](_0x5228a4=>{const _0x42ae40=_0x9327e9;if(_0x5228a4[_0x42ae40(0x201)]>=0x3){const _0x173f9b=_0x5228a4[0x2],_0x47d69a=_0x33740e(_0x173f9b);_0x5228a4[0xc]=_0x47d69a,_0x398618[_0x42ae40(0x261)](_0x5228a4[_0x42ae40(0x262)](','));}else _0x398618[_0x42ae40(0x261)](_0x5228a4[_0x42ae40(0x262)](','));});});const _0x424dae=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x424959=_0x424dae[_0x515a70(0x203)](_0x3bdea4=>allData1[_0x515a70(0x203)](_0x6bfe94=>parseFloat(_0x6bfe94[_0x3bdea4]))),_0xcfdb12=_0x424959[_0x515a70(0x203)](_0x4c14bf=>{const _0x54e678=_0x515a70,_0x4d7089=[..._0x4c14bf][_0x54e678(0x257)]((_0x125e59,_0x2c0f2a)=>_0x125e59-_0x2c0f2a);return _0x4c14bf[_0x54e678(0x203)](_0x494915=>{const _0x1c161f=_0x54e678,_0x55a1c9=_0x4d7089['indexOf'](_0x494915)+0x1;return _0x55a1c9/_0x4d7089[_0x1c161f(0x201)];});});allData1['forEach']((_0x403020,_0x5747bb)=>{const _0x28bcf1=_0x515a70;_0x424dae[_0x28bcf1(0x211)]((_0x32200c,_0x5ae0a7)=>{_0x403020[_0x32200c]=_0xcfdb12[_0x5ae0a7][_0x5747bb]['toFixed'](0x3);});});}function _0x4820(_0x5ce36f,_0x302cee){const _0x2a95f4=_0x2a95();return _0x4820=function(_0x482020,_0x4028cb){_0x482020=_0x482020-0x1ee;let _0x5727eb=_0x2a95f4[_0x482020];return _0x5727eb;},_0x4820(_0x5ce36f,_0x302cee);}function processAndStoreData2(_0x13b615){const _0x40be3f=_0x465e75;let _0x29f7cd=0x1;_0x13b615[_0x40be3f(0x211)](_0x13ab31=>{const _0x5cde2a=_0x40be3f,_0x3bf812=XLSX['read'](new Uint8Array(_0x13ab31),{'type':_0x5cde2a(0x24c)}),_0xd27070=_0x3bf812[_0x5cde2a(0x22d)][0x0],_0x3168db=_0x3bf812[_0x5cde2a(0x218)][_0xd27070],_0x52f5e1=XLSX[_0x5cde2a(0x1f2)][_0x5cde2a(0x267)](_0x3168db,{'header':0x1}),_0x1f6f1c=_0x52f5e1[_0x5cde2a(0x247)](0x1);_0x1f6f1c[_0x5cde2a(0x211)](_0x4970e0=>{const _0x26916e=_0x5cde2a;_0x4970e0[_0x26916e(0x206)](''+_0x29f7cd++),_0x4970e0['splice'](0xc,0x0,_0x4970e0[_0x26916e(0x23b)](0x4,0x1)[0x0]),_0x4970e0['splice'](0x7,0x0,_0x4970e0['splice'](0xb,0x1)[0x0]),_0x4970e0[_0x26916e(0x23b)](0x9,0x0,_0x4970e0[_0x26916e(0x23b)](0xa,0x1)[0x0]),_0x4970e0[0xf]=''+_0x4970e0[0x1],_0x4970e0['splice'](0x10,0x1);const _0x32a9c9=[_0x4970e0[0x0],_0x4970e0[0xf],_0x4970e0[0x2],_0x4970e0[0x4],_0x4970e0[0x5],_0x4970e0[0xb],_0x4970e0[0x6],_0x4970e0[0xa],_0x4970e0[0x8],_0x4970e0[0x9],_0x4970e0[0x7],_0x4970e0[0x3]];allData2[_0x26916e(0x261)](_0x32a9c9);});function _0x276c1b(_0x46b3e3){const _0x223c4c=_0x5cde2a;for(const [_0x8e7b8c,_0x15a2e]of Object[_0x223c4c(0x21e)](leagues)){if(_0x15a2e[_0x223c4c(0x1f6)](_0x46b3e3))return _0x8e7b8c;}return _0x223c4c(0x275);}const _0x3c05d5=[];allData2['forEach'](_0x129e16=>{const _0x46157f=_0x5cde2a;if(_0x129e16['length']>=0x3){const _0xd5923a=_0x129e16[0x2],_0x50b8bc=_0x276c1b(_0xd5923a);_0x129e16[0xc]=_0x50b8bc,_0x3c05d5['push'](_0x129e16[_0x46157f(0x262)](','));}else _0x3c05d5[_0x46157f(0x261)](_0x129e16['join'](','));});});const _0x56ec9f=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x40598a=_0x56ec9f[_0x40be3f(0x203)](_0x4d998f=>allData2[_0x40be3f(0x203)](_0x326bb0=>parseFloat(_0x326bb0[_0x4d998f]))),_0x510d56=_0x40598a[_0x40be3f(0x203)](_0x50905d=>{const _0x104aff=_0x40be3f,_0x5396b7=[..._0x50905d][_0x104aff(0x257)]((_0x24733e,_0x537102)=>_0x24733e-_0x537102);return _0x50905d[_0x104aff(0x203)](_0x4f159b=>{const _0x96a81d=_0x104aff,_0x10cb30=_0x5396b7[_0x96a81d(0x222)](_0x4f159b)+0x1;return _0x10cb30/_0x5396b7[_0x96a81d(0x201)];});});allData2[_0x40be3f(0x211)]((_0x1aa985,_0x4ac140)=>{const _0x2cde79=_0x40be3f;_0x56ec9f[_0x2cde79(0x211)]((_0x5173f2,_0x9f295a)=>{const _0x523142=_0x2cde79;_0x1aa985[_0x5173f2]=_0x510d56[_0x9f295a][_0x4ac140][_0x523142(0x25b)](0x3);});});}Promise['all'](fetchPromises1)[_0x465e75(0x1f4)](_0x37afdc=>{const _0x42d910=_0x465e75;processAndStoreData1(_0x37afdc),Promise[_0x42d910(0x213)](fetchPromises2)[_0x42d910(0x1f4)](_0x254e14=>{const _0x176ebe=_0x42d910;processAndStoreData2(_0x254e14);const _0x409d0f=allData1[_0x176ebe(0x221)](allData2);_0x409d0f['forEach']((_0x4309d7,_0x509c6a)=>{_0x4309d7[0x0]=''+(_0x509c6a+0x1);}),_0x409d0f[_0x176ebe(0x211)](_0x5ce6be=>{const _0x6d7f9b=_0x176ebe;allDataAsString1+=_0x5ce6be[_0x6d7f9b(0x262)](',')+'\x0a';});let _0xe2cb6a=allDataAsString1[_0x176ebe(0x209)]('\x5cn')[_0x176ebe(0x262)]('\x0a'),_0x46e5b8=_0xe2cb6a[_0x176ebe(0x209)]('\x0a');_0x46e5b8[_0x176ebe(0x208)](),_0xe2cb6a=_0x46e5b8[_0x176ebe(0x262)]('\x0a');const _0x2a9786=urls3[_0x176ebe(0x203)](_0x4371b2=>fetch(_0x4371b2)['then'](_0x407330=>_0x407330['arrayBuffer']())),_0x2bab7e=urls4['map'](_0x344827=>fetch(_0x344827)[_0x176ebe(0x1f4)](_0xcef2d3=>_0xcef2d3[_0x176ebe(0x1f0)]()));function _0xb89b66(_0x2bf614){const _0x21a0e3=_0x176ebe;let _0x19670e=0x1;_0x2bf614[_0x21a0e3(0x211)](_0x269466=>{const _0x2151d5=_0x21a0e3,_0x5582ac=XLSX[_0x2151d5(0x1ff)](new Uint8Array(_0x269466),{'type':'array'}),_0x3d0eb4=_0x5582ac[_0x2151d5(0x22d)][0x0],_0xb3fbfa=_0x5582ac[_0x2151d5(0x218)][_0x3d0eb4],_0x3da728=XLSX['utils'][_0x2151d5(0x267)](_0xb3fbfa,{'header':0x1}),_0x37dbbd=_0x3da728['slice'](0x1);_0x37dbbd[_0x2151d5(0x211)](_0x152b88=>{const _0x51f88d=_0x2151d5;_0x152b88[_0x51f88d(0x206)](''+_0x19670e++),_0x152b88['splice'](0xc,0x0,_0x152b88[_0x51f88d(0x23b)](0x4,0x1)[0x0]),_0x152b88[_0x51f88d(0x23b)](0x7,0x0,_0x152b88[_0x51f88d(0x23b)](0xb,0x1)[0x0]),_0x152b88[_0x51f88d(0x23b)](0x9,0x0,_0x152b88[_0x51f88d(0x23b)](0xa,0x1)[0x0]),_0x152b88[0xf]=''+_0x152b88[0x1],_0x152b88[0xe]=_0x152b88[0x9]*_0x152b88[0xa]/0x64,_0x152b88[_0x51f88d(0x23b)](0x10,0x1);const _0x263ddd=[_0x152b88[0x0],_0x152b88[0xf],_0x152b88[0x2],_0x152b88[0xe],_0x152b88[0xb],_0x152b88[0x7],_0x152b88[0x4],_0x152b88[0x5],_0x152b88[0x6],_0x152b88[0x8],_0x152b88[0xc],_0x152b88[0x3]];allData3[_0x51f88d(0x261)](_0x263ddd);});function _0x242ad5(_0x18d6b6){const _0x4906be=_0x2151d5;for(const [_0x59970d,_0x5aa260]of Object[_0x4906be(0x21e)](leagues)){if(_0x5aa260[_0x4906be(0x1f6)](_0x18d6b6))return _0x59970d;}return'Unknown\x20League';}const _0x2c3e18=[];allData3['forEach'](_0x3fabd6=>{const _0x5a41c6=_0x2151d5;if(_0x3fabd6['length']>=0x3){const _0x519398=_0x3fabd6[0x2],_0x47a1d7=_0x242ad5(_0x519398);_0x3fabd6[0xc]=_0x47a1d7,_0x2c3e18['push'](_0x3fabd6[_0x5a41c6(0x262)](','));}else _0x2c3e18[_0x5a41c6(0x261)](_0x3fabd6[_0x5a41c6(0x262)](','));});});const _0x39a361=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x41129c=_0x39a361[_0x21a0e3(0x203)](_0x55d0fd=>allData3[_0x21a0e3(0x203)](_0x29a6a7=>parseFloat(_0x29a6a7[_0x55d0fd]))),_0x335e55=_0x41129c[_0x21a0e3(0x203)](_0x4fda1c=>{const _0xa52592=_0x21a0e3,_0x21af30=[..._0x4fda1c][_0xa52592(0x257)]((_0x11d92b,_0x30bb55)=>_0x11d92b-_0x30bb55);return _0x4fda1c[_0xa52592(0x203)](_0x2e1379=>{const _0x351c6e=_0xa52592,_0x2b42b8=_0x21af30[_0x351c6e(0x222)](_0x2e1379)+0x1;return _0x2b42b8/_0x21af30[_0x351c6e(0x201)];});});allData3[_0x21a0e3(0x211)]((_0x3b33c8,_0x20a95e)=>{const _0x270d8a=_0x21a0e3;_0x39a361[_0x270d8a(0x211)]((_0xff0bf7,_0x1404f5)=>{const _0x33fcd8=_0x270d8a;_0x3b33c8[_0xff0bf7]=_0x335e55[_0x1404f5][_0x20a95e][_0x33fcd8(0x25b)](0x3);});});}function _0x17ba4a(_0x2554f7){const _0x535118=_0x176ebe;let _0x35665c=0x1;_0x2554f7[_0x535118(0x211)](_0x33343b=>{const _0x109186=_0x535118,_0xfa18a6=XLSX[_0x109186(0x1ff)](new Uint8Array(_0x33343b),{'type':_0x109186(0x24c)}),_0x1bdce0=_0xfa18a6['SheetNames'][0x0],_0x45382d=_0xfa18a6[_0x109186(0x218)][_0x1bdce0],_0x5ddd00=XLSX[_0x109186(0x1f2)][_0x109186(0x267)](_0x45382d,{'header':0x1}),_0x2b3959=_0x5ddd00[_0x109186(0x247)](0x1);_0x2b3959[_0x109186(0x211)](_0x25ce5f=>{const _0x3e6e94=_0x109186;_0x25ce5f['unshift'](''+_0x35665c++),_0x25ce5f['splice'](0xc,0x0,_0x25ce5f['splice'](0x4,0x1)[0x0]),_0x25ce5f[_0x3e6e94(0x23b)](0x7,0x0,_0x25ce5f[_0x3e6e94(0x23b)](0xb,0x1)[0x0]),_0x25ce5f[_0x3e6e94(0x23b)](0x9,0x0,_0x25ce5f[_0x3e6e94(0x23b)](0xa,0x1)[0x0]),_0x25ce5f[0xf]=''+_0x25ce5f[0x1],_0x25ce5f[0xe]=_0x25ce5f[0x9]*_0x25ce5f[0xa]/0x64,_0x25ce5f[_0x3e6e94(0x23b)](0x10,0x1);const _0xb62993=[_0x25ce5f[0x0],_0x25ce5f[0xf],_0x25ce5f[0x2],_0x25ce5f[0xe],_0x25ce5f[0xb],_0x25ce5f[0x7],_0x25ce5f[0x4],_0x25ce5f[0x5],_0x25ce5f[0x6],_0x25ce5f[0x8],_0x25ce5f[0xc],_0x25ce5f[0x3]];allData4[_0x3e6e94(0x261)](_0xb62993);});function _0x403010(_0x14d6bb){const _0x5673dd=_0x109186;for(const [_0x55d49b,_0x2c515b]of Object[_0x5673dd(0x21e)](leagues)){if(_0x2c515b['includes'](_0x14d6bb))return _0x55d49b;}return _0x5673dd(0x275);}const _0x571e0d=[];allData4[_0x109186(0x211)](_0x18c4bc=>{const _0x534f41=_0x109186;if(_0x18c4bc['length']>=0x3){const _0x30a2fa=_0x18c4bc[0x2],_0x2c19c6=_0x403010(_0x30a2fa);_0x18c4bc[0xc]=_0x2c19c6,_0x571e0d['push'](_0x18c4bc[_0x534f41(0x262)](','));}else _0x571e0d[_0x534f41(0x261)](_0x18c4bc[_0x534f41(0x262)](','));});});const _0x244f9c=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x4ef313=_0x244f9c['map'](_0x278d95=>allData4[_0x535118(0x203)](_0x21a555=>parseFloat(_0x21a555[_0x278d95]))),_0x266913=_0x4ef313['map'](_0x26bd45=>{const _0x35a27d=_0x535118,_0x2b4648=[..._0x26bd45][_0x35a27d(0x257)]((_0x1bb5c7,_0x4420c)=>_0x1bb5c7-_0x4420c);return _0x26bd45[_0x35a27d(0x203)](_0x137742=>{const _0x4cd076=_0x35a27d,_0x3da27c=_0x2b4648[_0x4cd076(0x222)](_0x137742)+0x1;return _0x3da27c/_0x2b4648[_0x4cd076(0x201)];});});allData4[_0x535118(0x211)]((_0x46040e,_0x3d9e7d)=>{const _0x551cb5=_0x535118;_0x244f9c[_0x551cb5(0x211)]((_0x3c38cc,_0x33cd4a)=>{_0x46040e[_0x3c38cc]=_0x266913[_0x33cd4a][_0x3d9e7d]['toFixed'](0x3);});});}Promise['all'](_0x2a9786)[_0x176ebe(0x1f4)](_0x53fce1=>{const _0x284119=_0x176ebe;_0xb89b66(_0x53fce1),Promise[_0x284119(0x213)](_0x2bab7e)['then'](_0x558ad4=>{const _0xe6f5da=_0x284119;_0x17ba4a(_0x558ad4);const _0x39d975=allData3[_0xe6f5da(0x221)](allData4);_0x39d975[_0xe6f5da(0x211)]((_0x5f40fb,_0x3fb112)=>{_0x5f40fb[0x0]=''+(_0x3fb112+0x1);}),_0x39d975[_0xe6f5da(0x211)](_0x2da432=>{const _0x43aac5=_0xe6f5da;allDataAsString2+=_0x2da432[_0x43aac5(0x262)](',')+'\x0a';});let _0x35fe6d=allDataAsString2[_0xe6f5da(0x209)]('\x5cn')[_0xe6f5da(0x262)]('\x0a'),_0x2ff851=_0x35fe6d[_0xe6f5da(0x209)]('\x0a');_0x2ff851[_0xe6f5da(0x208)](),_0x35fe6d=_0x2ff851[_0xe6f5da(0x262)]('\x0a');const _0x54dac6=urls5[_0xe6f5da(0x203)](_0x28a3ec=>fetch(_0x28a3ec)[_0xe6f5da(0x1f4)](_0x417066=>_0x417066['arrayBuffer']())),_0x59a741=urls6[_0xe6f5da(0x203)](_0x49b058=>fetch(_0x49b058)[_0xe6f5da(0x1f4)](_0x2a015d=>_0x2a015d[_0xe6f5da(0x1f0)]()));function _0x15f4c4(_0x1376b5){const _0x522565=_0xe6f5da;let _0x5f41fd=0x1;_0x1376b5[_0x522565(0x211)](_0x49f7fe=>{const _0x61b402=_0x522565,_0x135a83=XLSX[_0x61b402(0x1ff)](new Uint8Array(_0x49f7fe),{'type':_0x61b402(0x24c)}),_0x58498d=_0x135a83['SheetNames'][0x0],_0x428446=_0x135a83['Sheets'][_0x58498d],_0x249eb0=XLSX[_0x61b402(0x1f2)]['sheet_to_json'](_0x428446,{'header':0x1}),_0x58b5d0=_0x249eb0[_0x61b402(0x247)](0x1);_0x58b5d0[_0x61b402(0x211)](_0x29a022=>{const _0x206fcc=_0x61b402;_0x29a022[_0x206fcc(0x206)](''+_0x5f41fd++),_0x29a022[0xf]=''+_0x29a022[0x1];const _0x3e389c=[_0x29a022[0x0],_0x29a022[0xf],_0x29a022[0x2],_0x29a022[0x8],_0x29a022[0xa],_0x29a022[0xb],_0x29a022[0x5],_0x29a022[0x6],_0x29a022[0x7],_0x29a022[0x9],_0x29a022[0x4],_0x29a022[0x3]];allData5[_0x206fcc(0x261)](_0x3e389c);});function _0x43b0ba(_0x4c59e0){const _0x4db523=_0x61b402;for(const [_0x1f90e3,_0x24bc8c]of Object[_0x4db523(0x21e)](leagues)){if(_0x24bc8c[_0x4db523(0x1f6)](_0x4c59e0))return _0x1f90e3;}return _0x4db523(0x275);}const _0x1b1bb2=[];allData5[_0x61b402(0x211)](_0x226339=>{const _0x5adf34=_0x61b402;if(_0x226339[_0x5adf34(0x201)]>=0x3){const _0xa3ee17=_0x226339[0x2],_0xac6ab0=_0x43b0ba(_0xa3ee17);_0x226339[0xc]=_0xac6ab0,_0x1b1bb2[_0x5adf34(0x261)](_0x226339['join'](','));}else _0x1b1bb2[_0x5adf34(0x261)](_0x226339['join'](','));});});const _0x1a4562=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x10dfeb=_0x1a4562[_0x522565(0x203)](_0x10c79a=>allData5[_0x522565(0x203)](_0x436d0f=>parseFloat(_0x436d0f[_0x10c79a]))),_0x2be213=_0x10dfeb[_0x522565(0x203)](_0x59c6bf=>{const _0x19a0e5=_0x522565,_0x34ad8b=[..._0x59c6bf]['sort']((_0x5ea893,_0x5cc72a)=>_0x5ea893-_0x5cc72a);return _0x59c6bf[_0x19a0e5(0x203)](_0x5452e6=>{const _0x348110=_0x34ad8b['indexOf'](_0x5452e6)+0x1;return _0x348110/_0x34ad8b['length'];});});allData5[_0x522565(0x211)]((_0x233d07,_0x4ba272)=>{const _0x59acdd=_0x522565;_0x1a4562[_0x59acdd(0x211)]((_0x4295e0,_0x3b3e33)=>{const _0x4b91ee=_0x59acdd;_0x233d07[_0x4295e0]=_0x2be213[_0x3b3e33][_0x4ba272][_0x4b91ee(0x25b)](0x3);});});}function _0x23d2db(_0x1e139b){const _0x37891f=_0xe6f5da;let _0xbd1d8=0x1;_0x1e139b[_0x37891f(0x211)](_0x45e451=>{const _0x22517f=_0x37891f,_0x5cfedb=XLSX[_0x22517f(0x1ff)](new Uint8Array(_0x45e451),{'type':'array'}),_0x2735f3=_0x5cfedb[_0x22517f(0x22d)][0x0],_0x5828ab=_0x5cfedb[_0x22517f(0x218)][_0x2735f3],_0x2b7470=XLSX[_0x22517f(0x1f2)]['sheet_to_json'](_0x5828ab,{'header':0x1}),_0x1ee3b2=_0x2b7470[_0x22517f(0x247)](0x1);_0x1ee3b2[_0x22517f(0x211)](_0x219603=>{const _0x4cbf09=_0x22517f;_0x219603[_0x4cbf09(0x206)](''+_0xbd1d8++),_0x219603[0xf]=''+_0x219603[0x1];const _0x3a9769=[_0x219603[0x0],_0x219603[0xf],_0x219603[0x2],_0x219603[0x8],_0x219603[0xa],_0x219603[0xb],_0x219603[0x5],_0x219603[0x6],_0x219603[0x7],_0x219603[0x9],_0x219603[0x4],_0x219603[0x3]];allData6['push'](_0x3a9769);});function _0x4aec98(_0x39ec30){const _0x59995d=_0x22517f;for(const [_0x8f5e04,_0xdf8cee]of Object[_0x59995d(0x21e)](leagues)){if(_0xdf8cee[_0x59995d(0x1f6)](_0x39ec30))return _0x8f5e04;}return _0x59995d(0x275);}const _0x38a72b=[];allData6[_0x22517f(0x211)](_0x1aec8d=>{const _0x39887e=_0x22517f;if(_0x1aec8d[_0x39887e(0x201)]>=0x3){const _0x51cf3e=_0x1aec8d[0x2],_0x342d10=_0x4aec98(_0x51cf3e);_0x1aec8d[0xc]=_0x342d10,_0x38a72b[_0x39887e(0x261)](_0x1aec8d[_0x39887e(0x262)](','));}else _0x38a72b['push'](_0x1aec8d[_0x39887e(0x262)](','));});});const _0x9edf58=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x557449=_0x9edf58[_0x37891f(0x203)](_0xb54144=>allData6['map'](_0x474d34=>parseFloat(_0x474d34[_0xb54144]))),_0x4d2791=_0x557449['map'](_0x42ccc0=>{const _0x341d92=_0x37891f,_0x4a1914=[..._0x42ccc0][_0x341d92(0x257)]((_0x3369fc,_0x20edd6)=>_0x3369fc-_0x20edd6);return _0x42ccc0['map'](_0x246e6e=>{const _0x8155d1=_0x341d92,_0x2a4366=_0x4a1914[_0x8155d1(0x222)](_0x246e6e)+0x1;return _0x2a4366/_0x4a1914[_0x8155d1(0x201)];});});allData6[_0x37891f(0x211)]((_0x3bc328,_0x19e6c9)=>{_0x9edf58['forEach']((_0x849c39,_0x212df7)=>{_0x3bc328[_0x849c39]=_0x4d2791[_0x212df7][_0x19e6c9]['toFixed'](0x3);});});}Promise[_0xe6f5da(0x213)](_0x54dac6)[_0xe6f5da(0x1f4)](_0x4f56e8=>{const _0x155914=_0xe6f5da;_0x15f4c4(_0x4f56e8),Promise[_0x155914(0x213)](_0x59a741)[_0x155914(0x1f4)](_0x220bbb=>{const _0x5de5d0=_0x155914;_0x23d2db(_0x220bbb);const _0x50baae=allData5[_0x5de5d0(0x221)](allData6);_0x50baae[_0x5de5d0(0x211)]((_0x2aabc0,_0x528f5b)=>{_0x2aabc0[0x0]=''+(_0x528f5b+0x1);}),_0x50baae['forEach'](_0x39ce6c=>{const _0x136419=_0x5de5d0;allDataAsString3+=_0x39ce6c[_0x136419(0x262)](',')+'\x0a';});let _0x19494b=allDataAsString3[_0x5de5d0(0x209)]('\x5cn')['join']('\x0a'),_0x5312ad=_0x19494b['split']('\x0a');_0x5312ad[_0x5de5d0(0x208)](),_0x19494b=_0x5312ad[_0x5de5d0(0x262)]('\x0a');const _0x308206=urls7[_0x5de5d0(0x203)](_0x520fa5=>fetch(_0x520fa5)[_0x5de5d0(0x1f4)](_0x5aabd2=>_0x5aabd2[_0x5de5d0(0x1f0)]())),_0x35242a=urls8['map'](_0x54235a=>fetch(_0x54235a)[_0x5de5d0(0x1f4)](_0x5d3590=>_0x5d3590['arrayBuffer']()));function _0x39b8f1(_0x3b7d63){const _0x5e93ff=_0x5de5d0;let _0x1ef211=0x1;_0x3b7d63[_0x5e93ff(0x211)](_0x4720f3=>{const _0x2d807b=_0x5e93ff,_0x1c469c=XLSX[_0x2d807b(0x1ff)](new Uint8Array(_0x4720f3),{'type':_0x2d807b(0x24c)}),_0x12d8f2=_0x1c469c[_0x2d807b(0x22d)][0x0],_0x3cfee5=_0x1c469c['Sheets'][_0x12d8f2],_0x3062ae=XLSX[_0x2d807b(0x1f2)][_0x2d807b(0x267)](_0x3cfee5,{'header':0x1}),_0x199beb=_0x3062ae['slice'](0x1);_0x199beb[_0x2d807b(0x211)](_0x1482e1=>{const _0x41a675=_0x2d807b;_0x1482e1[_0x41a675(0x206)](''+_0x1ef211++),_0x1482e1[0xf]=''+_0x1482e1[0x1];const _0x4b3afb=[_0x1482e1[0x0],_0x1482e1[0xf],_0x1482e1[0x2],_0x1482e1[0x5],_0x1482e1[0x6],_0x1482e1[0x7],_0x1482e1[0x8],_0x1482e1[0x9],_0x1482e1[0xa],_0x1482e1[0xb],_0x1482e1[0x4],_0x1482e1[0x3]];allData7['push'](_0x4b3afb);});function _0x416077(_0x2c1510){const _0x5b4567=_0x2d807b;for(const [_0x5359b0,_0x5bade7]of Object[_0x5b4567(0x21e)](leagues)){if(_0x5bade7[_0x5b4567(0x1f6)](_0x2c1510))return _0x5359b0;}return _0x5b4567(0x275);}const _0xeb7881=[];allData7['forEach'](_0x3990ab=>{const _0x3cbf1b=_0x2d807b;if(_0x3990ab['length']>=0x3){const _0x1b61d0=_0x3990ab[0x2],_0x4d5743=_0x416077(_0x1b61d0);_0x3990ab[0xc]=_0x4d5743,_0xeb7881[_0x3cbf1b(0x261)](_0x3990ab[_0x3cbf1b(0x262)](','));}else _0xeb7881[_0x3cbf1b(0x261)](_0x3990ab[_0x3cbf1b(0x262)](','));});});const _0x29d177=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x3d75c5=_0x29d177['map'](_0x598eeb=>allData7[_0x5e93ff(0x203)](_0x42d97d=>parseFloat(_0x42d97d[_0x598eeb]))),_0x214842=_0x3d75c5[_0x5e93ff(0x203)](_0x42b610=>{const _0x566616=_0x5e93ff,_0x43b82f=[..._0x42b610]['sort']((_0x2658f0,_0x40dcd6)=>_0x2658f0-_0x40dcd6);return _0x42b610[_0x566616(0x203)](_0x2b56e9=>{const _0x489827=_0x566616,_0x27d57d=_0x43b82f[_0x489827(0x222)](_0x2b56e9)+0x1;return _0x27d57d/_0x43b82f[_0x489827(0x201)];});});allData7[_0x5e93ff(0x211)]((_0x512059,_0x31e577)=>{const _0xd595df=_0x5e93ff;_0x29d177[_0xd595df(0x211)]((_0x10dc0f,_0x3022f5)=>{_0x512059[_0x10dc0f]=_0x214842[_0x3022f5][_0x31e577]['toFixed'](0x3);});});}function _0x8b04d(_0x3092ac){const _0x317cac=_0x5de5d0;let _0x4ad45b=0x1;_0x3092ac['forEach'](_0x4957f5=>{const _0x299210=_0x4820,_0x23384a=XLSX[_0x299210(0x1ff)](new Uint8Array(_0x4957f5),{'type':_0x299210(0x24c)}),_0x34c0a6=_0x23384a['SheetNames'][0x0],_0x71e493=_0x23384a[_0x299210(0x218)][_0x34c0a6],_0x16af62=XLSX['utils'][_0x299210(0x267)](_0x71e493,{'header':0x1}),_0x39e898=_0x16af62[_0x299210(0x247)](0x1);_0x39e898[_0x299210(0x211)](_0x37e041=>{const _0x57c69d=_0x299210;_0x37e041[_0x57c69d(0x206)](''+_0x4ad45b++),_0x37e041[0xf]=''+_0x37e041[0x1];const _0x29fd88=[_0x37e041[0x0],_0x37e041[0xf],_0x37e041[0x2],_0x37e041[0x5],_0x37e041[0x6],_0x37e041[0x7],_0x37e041[0x8],_0x37e041[0x9],_0x37e041[0xa],_0x37e041[0xb],_0x37e041[0x4],_0x37e041[0x3]];allData8['push'](_0x29fd88);});function _0x9861d0(_0x2807d2){const _0x245560=_0x299210;for(const [_0x5af6c3,_0x3ce2da]of Object[_0x245560(0x21e)](leagues)){if(_0x3ce2da[_0x245560(0x1f6)](_0x2807d2))return _0x5af6c3;}return _0x245560(0x275);}const _0x392cb3=[];allData8['forEach'](_0x179021=>{const _0x1edf13=_0x299210;if(_0x179021[_0x1edf13(0x201)]>=0x3){const _0x278af3=_0x179021[0x2],_0x360210=_0x9861d0(_0x278af3);_0x179021[0xc]=_0x360210,_0x392cb3[_0x1edf13(0x261)](_0x179021[_0x1edf13(0x262)](','));}else _0x392cb3[_0x1edf13(0x261)](_0x179021[_0x1edf13(0x262)](','));});});const _0x1cb3f5=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x2265d=_0x1cb3f5[_0x317cac(0x203)](_0x5b1e05=>allData8[_0x317cac(0x203)](_0x3a3b92=>parseFloat(_0x3a3b92[_0x5b1e05]))),_0x2539d0=_0x2265d[_0x317cac(0x203)](_0x4b9022=>{const _0x5036ff=_0x317cac,_0x5419fe=[..._0x4b9022][_0x5036ff(0x257)]((_0x4be1ef,_0x16b206)=>_0x4be1ef-_0x16b206);return _0x4b9022[_0x5036ff(0x203)](_0x6b1ee2=>{const _0x28fa4b=_0x5036ff,_0x5ee4a7=_0x5419fe[_0x28fa4b(0x222)](_0x6b1ee2)+0x1;return _0x5ee4a7/_0x5419fe['length'];});});allData8[_0x317cac(0x211)]((_0x2a9eae,_0x455e0b)=>{const _0x162b1d=_0x317cac;_0x1cb3f5[_0x162b1d(0x211)]((_0x10598a,_0xd39d18)=>{_0x2a9eae[_0x10598a]=_0x2539d0[_0xd39d18][_0x455e0b]['toFixed'](0x3);});});}Promise[_0x5de5d0(0x213)](_0x308206)[_0x5de5d0(0x1f4)](_0x14808c=>{const _0x49c199=_0x5de5d0;_0x39b8f1(_0x14808c),Promise[_0x49c199(0x213)](_0x35242a)[_0x49c199(0x1f4)](_0x5a4622=>{const _0x360d9f=_0x49c199;_0x8b04d(_0x5a4622);const _0x5d4fae=allData7[_0x360d9f(0x221)](allData8);_0x5d4fae[_0x360d9f(0x211)]((_0xe8c3e0,_0x550a16)=>{_0xe8c3e0[0x0]=''+(_0x550a16+0x1);}),_0x5d4fae[_0x360d9f(0x211)](_0x424aaf=>{allDataAsString4+=_0x424aaf['join'](',')+'\x0a';});let _0x1cef41=allDataAsString4[_0x360d9f(0x209)]('\x5cn')[_0x360d9f(0x262)]('\x0a'),_0x344720=_0x1cef41[_0x360d9f(0x209)]('\x0a');_0x344720['pop'](),_0x1cef41=_0x344720['join']('\x0a');const _0x1a174e=urls9[_0x360d9f(0x203)](_0x171996=>fetch(_0x171996)[_0x360d9f(0x1f4)](_0x486cdb=>_0x486cdb[_0x360d9f(0x1f0)]())),_0xa4de87=urls10[_0x360d9f(0x203)](_0x4d8a62=>fetch(_0x4d8a62)[_0x360d9f(0x1f4)](_0x365af4=>_0x365af4[_0x360d9f(0x1f0)]()));function _0x208413(_0x3837dc){const _0xf71ec6=_0x360d9f;let _0x1e0ac4=0x1;_0x3837dc[_0xf71ec6(0x211)](_0x294be1=>{const _0x486a0f=_0xf71ec6,_0x71ce04=XLSX[_0x486a0f(0x1ff)](new Uint8Array(_0x294be1),{'type':_0x486a0f(0x24c)}),_0x21f7a9=_0x71ce04[_0x486a0f(0x22d)][0x0],_0x32c00c=_0x71ce04['Sheets'][_0x21f7a9],_0x238383=XLSX['utils'][_0x486a0f(0x267)](_0x32c00c,{'header':0x1}),_0x414c76=_0x238383['slice'](0x1);_0x414c76[_0x486a0f(0x211)](_0x305199=>{const _0x28af1b=_0x486a0f;_0x305199[_0x28af1b(0x206)](''+_0x1e0ac4++),_0x305199[0xf]=''+_0x305199[0x1],_0x305199[0xe]=_0x305199[0x9]*_0x305199[0xa]/0x64,_0x305199[0x10]=_0x305199[0x7]+_0x305199[0xc];const _0x4051da=[_0x305199[0x0],_0x305199[0xf],_0x305199[0x2],_0x305199[0xb],_0x305199[0xe],_0x305199[0x6],_0x305199[0x10],_0x305199[0x8],_0x305199[0xd],_0x305199[0x5],_0x305199[0x4],_0x305199[0x3]];allData9[_0x28af1b(0x261)](_0x4051da);});function _0x4f9845(_0x321e70){const _0x259526=_0x486a0f;for(const [_0x144480,_0x552267]of Object[_0x259526(0x21e)](leagues)){if(_0x552267['includes'](_0x321e70))return _0x144480;}return'Unknown\x20League';}const _0x5839b3=[];allData9[_0x486a0f(0x211)](_0x519a2b=>{const _0x1d11a0=_0x486a0f;if(_0x519a2b[_0x1d11a0(0x201)]>=0x3){const _0x672961=_0x519a2b[0x2],_0x4e86b9=_0x4f9845(_0x672961);_0x519a2b[0xc]=_0x4e86b9,_0x5839b3[_0x1d11a0(0x261)](_0x519a2b[_0x1d11a0(0x262)](','));}else _0x5839b3[_0x1d11a0(0x261)](_0x519a2b[_0x1d11a0(0x262)](','));});});const _0x1faf27=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x488285=_0x1faf27[_0xf71ec6(0x203)](_0x2de042=>allData9[_0xf71ec6(0x203)](_0x5424eb=>parseFloat(_0x5424eb[_0x2de042]))),_0x24eeff=_0x488285['map'](_0x4da6e6=>{const _0x499468=_0xf71ec6,_0x2d4e15=[..._0x4da6e6][_0x499468(0x257)]((_0x3c99ba,_0x23e149)=>_0x3c99ba-_0x23e149);return _0x4da6e6[_0x499468(0x203)](_0x34035e=>{const _0x1575ef=_0x499468,_0x2500f8=_0x2d4e15[_0x1575ef(0x222)](_0x34035e)+0x1;return _0x2500f8/_0x2d4e15['length'];});});allData9['forEach']((_0x28aa9f,_0xea4e97)=>{_0x1faf27['forEach']((_0xc6d17c,_0x5a29b0)=>{const _0x2b9082=_0x4820;_0x28aa9f[_0xc6d17c]=_0x24eeff[_0x5a29b0][_0xea4e97][_0x2b9082(0x25b)](0x3);});});}function _0x377292(_0x375055){const _0x5a9aa5=_0x360d9f;let _0x3d1ea0=0x1;_0x375055['forEach'](_0xd14dde=>{const _0x5e806b=_0x4820,_0x2608f4=XLSX[_0x5e806b(0x1ff)](new Uint8Array(_0xd14dde),{'type':_0x5e806b(0x24c)}),_0x40d182=_0x2608f4[_0x5e806b(0x22d)][0x0],_0x50cade=_0x2608f4[_0x5e806b(0x218)][_0x40d182],_0x377e07=XLSX[_0x5e806b(0x1f2)][_0x5e806b(0x267)](_0x50cade,{'header':0x1}),_0x2bdfb3=_0x377e07[_0x5e806b(0x247)](0x1);_0x2bdfb3[_0x5e806b(0x211)](_0x33eaa5=>{_0x33eaa5['unshift'](''+_0x3d1ea0++),_0x33eaa5[0xf]=''+_0x33eaa5[0x1],_0x33eaa5[0xe]=_0x33eaa5[0x9]*_0x33eaa5[0xa]/0x64,_0x33eaa5[0x10]=_0x33eaa5[0x7]+_0x33eaa5[0xc];const _0x97d7ec=[_0x33eaa5[0x0],_0x33eaa5[0xf],_0x33eaa5[0x2],_0x33eaa5[0xb],_0x33eaa5[0xe],_0x33eaa5[0x6],_0x33eaa5[0x10],_0x33eaa5[0x8],_0x33eaa5[0xd],_0x33eaa5[0x5],_0x33eaa5[0x4],_0x33eaa5[0x3]];allData10['push'](_0x97d7ec);});function _0x226928(_0x552c83){const _0x301760=_0x5e806b;for(const [_0x251b55,_0x13c35d]of Object['entries'](leagues)){if(_0x13c35d[_0x301760(0x1f6)](_0x552c83))return _0x251b55;}return'Unknown\x20League';}const _0x4b2a32=[];allData10[_0x5e806b(0x211)](_0x52671c=>{const _0x332818=_0x5e806b;if(_0x52671c['length']>=0x3){const _0x1fbec9=_0x52671c[0x2],_0x3aea3d=_0x226928(_0x1fbec9);_0x52671c[0xc]=_0x3aea3d,_0x4b2a32[_0x332818(0x261)](_0x52671c['join'](','));}else _0x4b2a32['push'](_0x52671c[_0x332818(0x262)](','));});});const _0x2215ed=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x4e3b7f=_0x2215ed[_0x5a9aa5(0x203)](_0x72b265=>allData10[_0x5a9aa5(0x203)](_0x18b836=>parseFloat(_0x18b836[_0x72b265]))),_0x3df635=_0x4e3b7f['map'](_0x2359d2=>{const _0x487f4=_0x5a9aa5,_0x4a5cb7=[..._0x2359d2]['sort']((_0x3fc49b,_0xab7a92)=>_0x3fc49b-_0xab7a92);return _0x2359d2[_0x487f4(0x203)](_0x32506f=>{const _0x3e0c83=_0x487f4,_0x303bdd=_0x4a5cb7[_0x3e0c83(0x222)](_0x32506f)+0x1;return _0x303bdd/_0x4a5cb7['length'];});});allData10[_0x5a9aa5(0x211)]((_0x315b44,_0x21aa1f)=>{const _0x475ff1=_0x5a9aa5;_0x2215ed[_0x475ff1(0x211)]((_0x2b3e9b,_0x4b69f0)=>{_0x315b44[_0x2b3e9b]=_0x3df635[_0x4b69f0][_0x21aa1f]['toFixed'](0x3);});});}Promise[_0x360d9f(0x213)](_0x1a174e)[_0x360d9f(0x1f4)](_0x883ab0=>{const _0x2ea22b=_0x360d9f;_0x208413(_0x883ab0),Promise['all'](_0xa4de87)[_0x2ea22b(0x1f4)](_0x391f23=>{const _0x1b3898=_0x2ea22b;_0x377292(_0x391f23);const _0x49bef4=allData9[_0x1b3898(0x221)](allData10);_0x49bef4[_0x1b3898(0x211)]((_0x50d7a1,_0x1240d8)=>{_0x50d7a1[0x0]=''+(_0x1240d8+0x1);}),_0x49bef4[_0x1b3898(0x211)](_0x4df6e6=>{const _0x587261=_0x1b3898;allDataAsString5+=_0x4df6e6[_0x587261(0x262)](',')+'\x0a';});let _0xe51ca=allDataAsString5[_0x1b3898(0x209)]('\x5cn')[_0x1b3898(0x262)]('\x0a'),_0x3eb4f4=_0xe51ca[_0x1b3898(0x209)]('\x0a');_0x3eb4f4[_0x1b3898(0x208)](),_0xe51ca=_0x3eb4f4[_0x1b3898(0x262)]('\x0a');const _0x422f2a=urls11[_0x1b3898(0x203)](_0x5da43e=>fetch(_0x5da43e)[_0x1b3898(0x1f4)](_0x3efa8c=>_0x3efa8c[_0x1b3898(0x1f0)]())),_0x3b744e=urls12[_0x1b3898(0x203)](_0x58b6d8=>fetch(_0x58b6d8)[_0x1b3898(0x1f4)](_0x546e4e=>_0x546e4e[_0x1b3898(0x1f0)]()));function _0x202c3c(_0x12ff38){const _0x3aeb9c=_0x1b3898;let _0x3dc5c7=0x1;_0x12ff38['forEach'](_0x3ba53d=>{const _0x134552=_0x4820,_0xe081b7=XLSX[_0x134552(0x1ff)](new Uint8Array(_0x3ba53d),{'type':_0x134552(0x24c)}),_0x22e8e0=_0xe081b7[_0x134552(0x22d)][0x0],_0x514ca3=_0xe081b7[_0x134552(0x218)][_0x22e8e0],_0x1317c9=XLSX[_0x134552(0x1f2)][_0x134552(0x267)](_0x514ca3,{'header':0x1}),_0x434fe6=_0x1317c9['slice'](0x1);_0x434fe6[_0x134552(0x211)](_0x4192ab=>{const _0x12b286=_0x134552;_0x4192ab[_0x12b286(0x206)](''+_0x3dc5c7++),_0x4192ab[0xf]=''+_0x4192ab[0x1];const _0x1677b1=[_0x4192ab[0x0],_0x4192ab[0xf],_0x4192ab[0x2],_0x4192ab[0x9],_0x4192ab[0x5],_0x4192ab[0x7],_0x4192ab[0x8],_0x4192ab[0xb],_0x4192ab[0xa],_0x4192ab[0x6],_0x4192ab[0x4],_0x4192ab[0x3]];allData11[_0x12b286(0x261)](_0x1677b1);});function _0x5c5cd8(_0x13c390){const _0x8696c1=_0x134552;for(const [_0x57d836,_0x46566f]of Object['entries'](leagues)){if(_0x46566f[_0x8696c1(0x1f6)](_0x13c390))return _0x57d836;}return _0x8696c1(0x275);}const _0x3cbc1e=[];allData11['forEach'](_0x5659e3=>{const _0x1e816a=_0x134552;if(_0x5659e3[_0x1e816a(0x201)]>=0x3){const _0x1f3e86=_0x5659e3[0x2],_0x507a50=_0x5c5cd8(_0x1f3e86);_0x5659e3[0xc]=_0x507a50,_0x3cbc1e['push'](_0x5659e3['join'](','));}else _0x3cbc1e[_0x1e816a(0x261)](_0x5659e3[_0x1e816a(0x262)](','));});});const _0x3004c6=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0xbb17a4=_0x3004c6[_0x3aeb9c(0x203)](_0x1225b4=>allData11['map'](_0x49c7a0=>parseFloat(_0x49c7a0[_0x1225b4]))),_0x1191a4=_0xbb17a4[_0x3aeb9c(0x203)](_0x2e5412=>{const _0x2c54c7=_0x3aeb9c,_0x2fd402=[..._0x2e5412]['sort']((_0x305bff,_0xfd25e4)=>_0x305bff-_0xfd25e4);return _0x2e5412[_0x2c54c7(0x203)](_0x4045e7=>{const _0x3ba9ef=_0x2c54c7,_0xb40cc2=_0x2fd402[_0x3ba9ef(0x222)](_0x4045e7)+0x1;return _0xb40cc2/_0x2fd402[_0x3ba9ef(0x201)];});});allData11['forEach']((_0x13da3f,_0x4d7b85)=>{const _0x40b6bd=_0x3aeb9c;_0x3004c6[_0x40b6bd(0x211)]((_0x4b6495,_0x42786d)=>{const _0x47860f=_0x40b6bd;_0x13da3f[_0x4b6495]=_0x1191a4[_0x42786d][_0x4d7b85][_0x47860f(0x25b)](0x3);});});}function _0x12f1f4(_0x418ae7){const _0xaa49a7=_0x1b3898;let _0x5eb1ae=0x1;_0x418ae7[_0xaa49a7(0x211)](_0x2917da=>{const _0x5b5105=_0xaa49a7,_0x4859cc=XLSX[_0x5b5105(0x1ff)](new Uint8Array(_0x2917da),{'type':_0x5b5105(0x24c)}),_0x1fdae0=_0x4859cc[_0x5b5105(0x22d)][0x0],_0x57e580=_0x4859cc[_0x5b5105(0x218)][_0x1fdae0],_0x394e8c=XLSX[_0x5b5105(0x1f2)]['sheet_to_json'](_0x57e580,{'header':0x1}),_0x5c5b20=_0x394e8c['slice'](0x1);_0x5c5b20[_0x5b5105(0x211)](_0x6dccea=>{const _0x5e5346=_0x5b5105;_0x6dccea[_0x5e5346(0x206)](''+_0x5eb1ae++),_0x6dccea[0xf]=''+_0x6dccea[0x1];const _0x831e2a=[_0x6dccea[0x0],_0x6dccea[0xf],_0x6dccea[0x2],_0x6dccea[0x9],_0x6dccea[0x5],_0x6dccea[0x7],_0x6dccea[0x8],_0x6dccea[0xb],_0x6dccea[0xa],_0x6dccea[0x6],_0x6dccea[0x4],_0x6dccea[0x3]];allData12[_0x5e5346(0x261)](_0x831e2a);});function _0x5ee746(_0x269e1d){const _0x9abfa5=_0x5b5105;for(const [_0x181aca,_0x4291cc]of Object[_0x9abfa5(0x21e)](leagues)){if(_0x4291cc['includes'](_0x269e1d))return _0x181aca;}return'Unknown\x20League';}const _0x36ecab=[];allData12[_0x5b5105(0x211)](_0x1fae14=>{const _0x325a8e=_0x5b5105;if(_0x1fae14[_0x325a8e(0x201)]>=0x3){const _0x1b89ae=_0x1fae14[0x2],_0x17c935=_0x5ee746(_0x1b89ae);_0x1fae14[0xc]=_0x17c935,_0x36ecab[_0x325a8e(0x261)](_0x1fae14[_0x325a8e(0x262)](','));}else _0x36ecab[_0x325a8e(0x261)](_0x1fae14[_0x325a8e(0x262)](','));});});const _0x4e5ca7=[0x3,0x4,0x5,0x6,0x7,0x8,0x9],_0x4e5f9d=_0x4e5ca7['map'](_0x114867=>allData12['map'](_0x34f21f=>parseFloat(_0x34f21f[_0x114867]))),_0x3376c6=_0x4e5f9d[_0xaa49a7(0x203)](_0x4f3cf1=>{const _0x3427d1=_0xaa49a7,_0x123732=[..._0x4f3cf1][_0x3427d1(0x257)]((_0x55eecb,_0x2c483d)=>_0x55eecb-_0x2c483d);return _0x4f3cf1[_0x3427d1(0x203)](_0x553679=>{const _0x103f31=_0x3427d1,_0x206e08=_0x123732[_0x103f31(0x222)](_0x553679)+0x1;return _0x206e08/_0x123732[_0x103f31(0x201)];});});allData12['forEach']((_0x53240c,_0x4d1d4d)=>{_0x4e5ca7['forEach']((_0x2fe358,_0x87a813)=>{const _0x46b2b9=_0x4820;_0x53240c[_0x2fe358]=_0x3376c6[_0x87a813][_0x4d1d4d][_0x46b2b9(0x25b)](0x3);});});}Promise[_0x1b3898(0x213)](_0x422f2a)[_0x1b3898(0x1f4)](_0x404744=>{const _0x5452df=_0x1b3898;_0x202c3c(_0x404744),Promise['all'](_0x3b744e)[_0x5452df(0x1f4)](_0x241306=>{const _0x2d0137=_0x5452df;_0x12f1f4(_0x241306);const _0x4bc16c=allData11[_0x2d0137(0x221)](allData12);_0x4bc16c[_0x2d0137(0x211)]((_0x2f3fa0,_0x3bd3ca)=>{_0x2f3fa0[0x0]=''+(_0x3bd3ca+0x1);}),_0x4bc16c['forEach'](_0x2b8adc=>{const _0x12b0bf=_0x2d0137;allDataAsString6+=_0x2b8adc[_0x12b0bf(0x262)](',')+'\x0a';});let _0x35606f=allDataAsString6[_0x2d0137(0x209)]('\x5cn')[_0x2d0137(0x262)]('\x0a'),_0x37d03c=_0x35606f['split']('\x0a');_0x37d03c[_0x2d0137(0x208)](),_0x35606f=_0x37d03c[_0x2d0137(0x262)]('\x0a');let _0x55f2c6=_0x2d0137(0x20a);document['getElementById'](_0x2d0137(0x269))[_0x2d0137(0x24d)]('change',function(){_0x55f2c6=this['value'];});const _0x4a0f8b=_0xe2cb6a['split']('\x0a')['map'](_0x2360f9=>_0x2360f9[_0x2d0137(0x209)](',')),_0x2e5357=_0x35fe6d[_0x2d0137(0x209)]('\x0a')[_0x2d0137(0x203)](_0x4849bd=>_0x4849bd[_0x2d0137(0x209)](',')),_0xda87ce=_0x19494b['split']('\x0a')[_0x2d0137(0x203)](_0x38d107=>_0x38d107[_0x2d0137(0x209)](',')),_0x1eae90=_0x1cef41['split']('\x0a')[_0x2d0137(0x203)](_0x46e8f3=>_0x46e8f3[_0x2d0137(0x209)](',')),_0x356401=_0xe51ca[_0x2d0137(0x209)]('\x0a')['map'](_0x851754=>_0x851754[_0x2d0137(0x209)](',')),_0x387ea2=_0x35606f[_0x2d0137(0x209)]('\x0a')[_0x2d0137(0x203)](_0x2ee813=>_0x2ee813[_0x2d0137(0x209)](',')),_0x3ece5f=[_0x2d0137(0x24b),'Aerials',_0x2d0137(0x236),_0x2d0137(0x234),'Long\x20pass%',_0x2d0137(0x230),_0x2d0137(0x249)],_0x841710=[_0x2d0137(0x234),_0x2d0137(0x22e),_0x2d0137(0x26b),'Def\x20actions',_0x2d0137(0x20e),'Aerial%',_0x2d0137(0x266)],_0x27b83b=[_0x2d0137(0x235),'xA',_0x2d0137(0x26b),'Def\x20actions',_0x2d0137(0x20e),_0x2d0137(0x204),_0x2d0137(0x266)],_0x566451=[_0x2d0137(0x232),_0x2d0137(0x24b),_0x2d0137(0x266),_0x2d0137(0x21b),_0x2d0137(0x22e),_0x2d0137(0x20f),'Prog\x20passes'],_0x1d634c=[_0x2d0137(0x266),_0x2d0137(0x26d),'NPG','xG+xA','Assists',_0x2d0137(0x20f),_0x2d0137(0x239)],_0x208235=['Pass\x20received',_0x2d0137(0x204),_0x2d0137(0x25f),'xG',_0x2d0137(0x1fb),'xA','Off\x20actions'];function _0x575235(_0x35ca3a){const _0x28fe20=_0x2d0137,_0x11d25e=document['getElementsByTagName']('label');let _0x27aae2;switch(_0x35ca3a){case _0x28fe20(0x231):_0x27aae2=_0x841710;break;case'dataset3':_0x27aae2=_0x27b83b;break;case _0x28fe20(0x1fe):_0x27aae2=_0x566451;break;case _0x28fe20(0x207):_0x27aae2=_0x1d634c;break;case'dataset6':_0x27aae2=_0x208235;break;default:_0x27aae2=_0x3ece5f;}for(let _0x165966=0x0;_0x165966<_0x27aae2['length'];_0x165966++){_0x11d25e[_0x165966][_0x28fe20(0x260)]=_0x27aae2[_0x165966]+'';}}function _0x505ab6(_0x3fad1b,_0x4bb632,_0x1af025){return _0x4bb632['filter'](_0x3e31d2=>{const _0x3ea5a6=_0x4820;for(let _0x41a61f=0x3;_0x41a61f<=0x9;_0x41a61f++){const _0x38983c=parseFloat(_0x3e31d2[_0x41a61f])*0x64;if(_0x38983c<_0x3fad1b[_0x41a61f-0x3][0x0])return![];}const _0x1f63aa=parseInt(_0x3e31d2[0xb]);if(_0x1f63aa<_0x3fad1b[0x7][0x0]||_0x1f63aa>_0x3fad1b[0x7][0x1])return![];const _0x248198=parseInt(_0x3e31d2[0xa]);if(_0x248198<_0x3fad1b[0x8][0x0]||_0x3fad1b[0x8][0x1]&&_0x248198>_0x3fad1b[0x8][0x1])return![];if(_0x1af025!==_0x3ea5a6(0x20a)){if(_0x1af025===_0x3ea5a6(0x22f)){const _0x1433ed=[_0x3ea5a6(0x20c),_0x3ea5a6(0x26e),_0x3ea5a6(0x225),_0x3ea5a6(0x217),_0x3ea5a6(0x264),'Eredivisie',_0x3ea5a6(0x23f)],_0x2bc25b=_0x3e31d2[0xc];if(!_0x1433ed['includes'](_0x2bc25b))return![];}else{if(_0x1af025===_0x3ea5a6(0x263)){const _0x153438=[_0x3ea5a6(0x20c),'La\x20Liga',_0x3ea5a6(0x225),_0x3ea5a6(0x217),_0x3ea5a6(0x264)],_0x56d9fa=_0x3e31d2[0xc];if(!_0x153438[_0x3ea5a6(0x1f6)](_0x56d9fa))return![];}else{if(_0x1af025==='Non\x20Top\x207\x20Leagues'){const _0x5eca08=[_0x3ea5a6(0x202),_0x3ea5a6(0x23e),'Swiss\x20Super\x20League',_0x3ea5a6(0x214),'Poland',_0x3ea5a6(0x233),_0x3ea5a6(0x242),'Russia',_0x3ea5a6(0x259),_0x3ea5a6(0x224),_0x3ea5a6(0x1f9),'Ecuador',_0x3ea5a6(0x250),_0x3ea5a6(0x273),_0x3ea5a6(0x270),_0x3ea5a6(0x1f1),_0x3ea5a6(0x220),_0x3ea5a6(0x268),_0x3ea5a6(0x23a),'MLS',_0x3ea5a6(0x245),'J1\x20League',_0x3ea5a6(0x274),_0x3ea5a6(0x271),_0x3ea5a6(0x1fc),_0x3ea5a6(0x25e),_0x3ea5a6(0x246),_0x3ea5a6(0x1ee),_0x3ea5a6(0x265),'Segunda\x20Division','Bundesliga\x202',_0x3ea5a6(0x21c),'Ligue\x202',_0x3ea5a6(0x275)],_0x15c42b=_0x3e31d2[0xc];if(!_0x5eca08[_0x3ea5a6(0x1f6)](_0x15c42b))return![];}else{if(_0x1af025===_0x3ea5a6(0x25d)){const _0x518d65=['Brazil\x20Serie\x20A','Argentina\x20Primera','Uruguay\x20Primera',_0x3ea5a6(0x259),_0x3ea5a6(0x224),_0x3ea5a6(0x1f9),_0x3ea5a6(0x243)],_0x38dbbe=_0x3e31d2[0xc];if(!_0x518d65[_0x3ea5a6(0x1f6)](_0x38dbbe))return![];}else{if(_0x1af025===_0x3ea5a6(0x22a)){const _0x37883b=[_0x3ea5a6(0x274),_0x3ea5a6(0x271),_0x3ea5a6(0x1fc)],_0x49b8a7=_0x3e31d2[0xc];if(!_0x37883b[_0x3ea5a6(0x1f6)](_0x49b8a7))return![];}else{if(_0x1af025===_0x3ea5a6(0x227)){const _0x24a80c=['Czech\x20Fortuna\x20Liga','Serbia\x20SuperLiga',_0x3ea5a6(0x1ee),_0x3ea5a6(0x24a),_0x3ea5a6(0x214),'Poland'],_0x6c33ed=_0x3e31d2[0xc];if(!_0x24a80c[_0x3ea5a6(0x1f6)](_0x6c33ed))return![];}else{if(_0x1af025===_0x3ea5a6(0x1ef)){const _0x18650d=[_0x3ea5a6(0x265),_0x3ea5a6(0x241),_0x3ea5a6(0x21f),_0x3ea5a6(0x21c),'Ligue\x202'],_0x237679=_0x3e31d2[0xc];if(!_0x18650d[_0x3ea5a6(0x1f6)](_0x237679))return![];}else{const _0x665315=_0x3e31d2[0xc];if(_0x665315!==_0x1af025)return![];}}}}}}}}return!![];});}document[_0x2d0137(0x25c)]('datasetSelector')[_0x2d0137(0x24d)](_0x2d0137(0x256),function(){const _0x14dd23=_0x2d0137,_0x43e0d6=document[_0x14dd23(0x25c)](_0x14dd23(0x205))[_0x14dd23(0x248)];_0x575235(_0x43e0d6);}),_0x575235(_0x2d0137(0x22b));function _0x51f491(){const _0x2d3ef=_0x2d0137,_0x307dfa=document[_0x2d3ef(0x278)]('input[type=\x22number\x22]');_0x307dfa[_0x2d3ef(0x211)](_0x5b0a64=>_0x5b0a64['value']='');const _0x2abbf0=document['getElementById']('resultsContainer');_0x2abbf0[_0x2d3ef(0x255)]='';}document[_0x2d0137(0x25c)](_0x2d0137(0x228))[_0x2d0137(0x24d)](_0x2d0137(0x200),function(_0x1f0409){const _0x4a5bb9=_0x2d0137;_0x1f0409[_0x4a5bb9(0x26f)]();const _0x18a157=document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x205))[_0x4a5bb9(0x248)];_0x55f2c6=document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x269))[_0x4a5bb9(0x248)];const _0x45b1b4=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x276))['value']),_0x32e674=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x219))[_0x4a5bb9(0x248)]),_0x16eb62=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x258))[_0x4a5bb9(0x248)]),_0x10857e=parseInt(document[_0x4a5bb9(0x25c)]('passesLow')[_0x4a5bb9(0x248)]),_0x55dfec=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x252))[_0x4a5bb9(0x248)]),_0x3c5349=parseInt(document[_0x4a5bb9(0x25c)]('shortPassPercentageLow')[_0x4a5bb9(0x248)]),_0x4f0858=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x1f7))[_0x4a5bb9(0x248)]),_0x519729=parseInt(document[_0x4a5bb9(0x25c)]('ageLow')[_0x4a5bb9(0x248)]),_0x4885d8=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x223))[_0x4a5bb9(0x248)]),_0x2d69cc=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x24f))[_0x4a5bb9(0x248)]),_0x51d523=parseInt(document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x237))['value']);let _0x143532;switch(_0x18a157){case'dataset2':_0x143532=_0x2e5357;break;case _0x4a5bb9(0x1f3):_0x143532=_0xda87ce;break;case _0x4a5bb9(0x1fe):_0x143532=_0x1eae90;break;case _0x4a5bb9(0x207):_0x143532=_0x356401;break;case _0x4a5bb9(0x25a):_0x143532=_0x387ea2;break;default:_0x143532=_0x4a0f8b;}const _0x2c9d75=_0x505ab6([[_0x45b1b4],[_0x32e674],[_0x16eb62],[_0x10857e],[_0x55dfec],[_0x3c5349],[_0x4f0858],[_0x519729,_0x4885d8],[_0x2d69cc,_0x51d523]],_0x143532,_0x55f2c6),_0x3a8b4b=document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x26a));_0x3a8b4b[_0x4a5bb9(0x255)]='';if(_0x2c9d75[_0x4a5bb9(0x201)]===0x0){const _0x4b6a49=document[_0x4a5bb9(0x21d)]('p');_0x4b6a49[_0x4a5bb9(0x260)]='No\x20players\x20found',_0x4b6a49[_0x4a5bb9(0x1f8)][_0x4a5bb9(0x215)](_0x4a5bb9(0x272)),_0x3a8b4b['appendChild'](_0x4b6a49);}else{const _0x195699=document[_0x4a5bb9(0x21d)](_0x4a5bb9(0x238)),_0x362887=_0xd2875f();_0x195699[_0x4a5bb9(0x1fa)](_0x362887);const _0x3026b7=document[_0x4a5bb9(0x21d)](_0x4a5bb9(0x26c));_0x2c9d75[_0x4a5bb9(0x211)](_0xb0eb3=>{const _0x25b108=_0x4a5bb9,_0x4517c1=document['createElement']('tr');_0x3026b7[_0x25b108(0x1fa)](_0x4517c1);const _0xaf4f06=document[_0x25b108(0x21d)]('td'),_0xc9db99=_0xb0eb3[0x1],_0x593237=_0xb0eb3[0x2],_0x50e2c5=_0xb0eb3[0xb],_0x1cad99=_0xb0eb3[0xa],_0x542fc5='<span>'+_0xc9db99+'</span><br><span\x20class=\x22player-info\x22>'+_0x50e2c5+',\x20'+_0x593237+',\x20'+_0x1cad99+_0x25b108(0x23c);_0xaf4f06[_0x25b108(0x255)]=_0x542fc5,_0x4517c1[_0x25b108(0x1fa)](_0xaf4f06);for(let _0x5b54fc=0x3;_0x5b54fc<=0x9;_0x5b54fc++){const _0x116da9=document['createElement']('td'),_0x401362=(parseFloat(_0xb0eb3[_0x5b54fc])*0x64)[_0x25b108(0x25b)](0x2);_0x116da9['textContent']=_0x401362;if(_0x401362>=0x4b&&_0x401362<=0x64)_0x116da9['style'][_0x25b108(0x212)]='green';else _0x401362>=0x0&&_0x401362<=0x19&&(_0x116da9[_0x25b108(0x20d)][_0x25b108(0x212)]='red');_0x4517c1[_0x25b108(0x1fa)](_0x116da9);}}),_0x195699[_0x4a5bb9(0x1fa)](_0x3026b7);const _0x1b1b51=document[_0x4a5bb9(0x25c)](_0x4a5bb9(0x216));_0x1b1b51[_0x4a5bb9(0x255)]='',_0x1b1b51[_0x4a5bb9(0x1fa)](_0x195699);}});let _0x14b6cc=-0x1,_0x178299=!![];function _0xd2875f(){const _0xd23426=_0x2d0137,_0xc1f39e=document['createElement'](_0xd23426(0x21a)),_0x43e98e=document[_0xd23426(0x21d)]('tr'),_0x3634c9=document[_0xd23426(0x25c)](_0xd23426(0x205))[_0xd23426(0x248)];let _0x1679dc;switch(_0x3634c9){case _0xd23426(0x231):_0x1679dc=_0x841710;break;case _0xd23426(0x1f3):_0x1679dc=_0x27b83b;break;case _0xd23426(0x1fe):_0x1679dc=_0x566451;break;case _0xd23426(0x207):_0x1679dc=_0x1d634c;break;case'dataset6':_0x1679dc=_0x208235;break;default:_0x1679dc=_0x3ece5f;break;}const _0x281e2a=document[_0xd23426(0x21d)]('th');_0x281e2a['textContent']='',_0x43e98e[_0xd23426(0x1fa)](_0x281e2a);for(let _0x4dcc13=0x0;_0x4dcc13<_0x1679dc[_0xd23426(0x201)];_0x4dcc13++){const _0x1adb08=document[_0xd23426(0x21d)]('th');_0x1adb08[_0xd23426(0x260)]=_0x1679dc[_0x4dcc13],_0x1adb08[_0xd23426(0x20d)][_0xd23426(0x253)]=_0xd23426(0x1f5),_0x1adb08[_0xd23426(0x24d)](_0xd23426(0x240),()=>{_0x201751(_0x4dcc13);}),_0x43e98e[_0xd23426(0x1fa)](_0x1adb08);}return _0xc1f39e['appendChild'](_0x43e98e),_0xc1f39e;}function _0x201751(_0x538e40){const _0x16d3fc=_0x2d0137;_0x14b6cc===_0x538e40?_0x178299=!_0x178299:(_0x178299=![],_0x14b6cc=_0x538e40);const _0x5dfcd1=document[_0x16d3fc(0x251)]('tbody'),_0x2e7013=Array['from'](_0x5dfcd1[_0x16d3fc(0x278)]('tr'));_0x2e7013[_0x16d3fc(0x257)]((_0x5e0b91,_0x3fd178)=>{const _0x2ce412=_0x16d3fc,_0x192850=parseFloat(_0x5e0b91['children'][_0x538e40+0x1][_0x2ce412(0x260)]),_0x175d74=parseFloat(_0x3fd178['children'][_0x538e40+0x1]['textContent']);return _0x178299?_0x192850-_0x175d74:_0x175d74-_0x192850;}),_0x5dfcd1[_0x16d3fc(0x255)]='',_0x2e7013['forEach'](_0x10b8d9=>{const _0x5dd755=_0x16d3fc;_0x5dfcd1[_0x5dd755(0x1fa)](_0x10b8d9);});}document[_0x2d0137(0x25c)]('datasetSelector')['addEventListener']('change',function(){const _0x4ff5f0=_0x2d0137,_0x5f5cbb=document[_0x4ff5f0(0x25c)](_0x4ff5f0(0x205))[_0x4ff5f0(0x248)];switch(_0x5f5cbb){case'dataset2':_0x575235(_0x4ff5f0(0x231));break;case _0x4ff5f0(0x1f3):_0x575235('dataset3');break;case _0x4ff5f0(0x1fe):_0x575235(_0x4ff5f0(0x1fe));break;case'dataset5':_0x575235(_0x4ff5f0(0x207));break;case _0x4ff5f0(0x25a):_0x575235(_0x4ff5f0(0x25a));break;default:_0x575235('dataset1');break;}_0x51f491();});});});});});});});});});});});});});
-  </script></div>
+
+    const fetchPromises1 = urls1.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises2 = urls2.map(url => fetch(url).then(response => response.arrayBuffer()));
+
+    function processAndStoreData1(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+                row.splice(12, 0, row.splice(4, 1)[0]);
+                row.splice(7, 0, row.splice(11, 1)[0]);
+                row.splice(9, 0, row.splice(10, 1)[0]);
+                row[15] = `${row[1]}`;
+                row.splice(16, 1);
+    
+                // Reorder columns
+                const reorderedRow = [
+                    row[0],
+                    row[15],
+                    row[2],
+                    row[4],
+                    row[5],
+                    row[11],
+                    row[6],
+                    row[10],
+                    row[8],
+                    row[9],
+                    row[7],
+                    row[3]
+                ];
+                allData1.push(reorderedRow);
+            });
+         
+
+function getTeamLeague1(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData1.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague1(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData1.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData1.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+    function processAndStoreData2(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+                row.splice(12, 0, row.splice(4, 1)[0]);
+                row.splice(7, 0, row.splice(11, 1)[0]);
+                row.splice(9, 0, row.splice(10, 1)[0]);
+                row[15] = `${row[1]}`;
+                row.splice(16, 1);
+    
+                const reorderedRow = [
+                    row[0],
+                    row[15],
+                    row[2],
+                    row[4],
+                    row[5],
+                    row[11],
+                    row[6],
+                    row[10],
+                    row[8],
+                    row[9],
+                    row[7],
+                    row[3]
+                ];
+    
+                allData2.push(reorderedRow);
+            });
+           
+
+function getTeamLeague2(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData2.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague2(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData2.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData2.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+  
+
+    
+    Promise.all(fetchPromises1)
+        .then(responses => {
+            processAndStoreData1(responses);
+    
+        
+            // Fetch and process the remaining files
+            Promise.all(fetchPromises2)
+                .then(responses2 => {
+                    processAndStoreData2(responses2);
+    
+
+                    // Concatenate intermediate data with new data
+                    const finalData = allData1.concat(allData2);
+    
+                    // Reset and assign new unique IDs
+                    finalData.forEach((row, index) => {
+                        row[0] = `${index + 1}`;
+                    });
+                    
+                    finalData.forEach(row => {
+                        allDataAsString1 += row.join(',') + '\n';
+                    });
+    
+// Replace all '\n' characters with actual new rows in the CSV
+let csvData1 = allDataAsString1.split('\\n').join('\n');
+
+// Convert the CSV string into an array of rows
+let rows = csvData1.split('\n');
+
+// Remove the last row
+rows.pop();
+
+// Join the rows back into a single string
+csvData1 = rows.join('\n');
+
+
+const fetchPromises3 = urls3.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises4 = urls4.map(url => fetch(url).then(response => response.arrayBuffer()));
+
+    function processAndStoreData3(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+                row.splice(12, 0, row.splice(4, 1)[0]);
+                row.splice(7, 0, row.splice(11, 1)[0]);
+                row.splice(9, 0, row.splice(10, 1)[0]);
+                row[15] = `${row[1]}`;
+                row[14] = (row[9] * row[10]) / 100;  // Equivalent formula
+                row.splice(16, 1);
+    
+                // Reorder columns
+                const reorderedRow = [
+                    row[0],
+                    row[15],
+                    row[2],
+                    row[14],
+                    row[11],
+                    row[7],
+                    row[4],
+                    row[5],
+                    row[6],
+                    row[8],
+                    row[12],
+                    row[3]
+                ];
+                allData3.push(reorderedRow);
+            });
+         
+
+function getTeamLeague3(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData3.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague3(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData3.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData3.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+    function processAndStoreData4(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+                row.splice(12, 0, row.splice(4, 1)[0]);
+                row.splice(7, 0, row.splice(11, 1)[0]);
+                row.splice(9, 0, row.splice(10, 1)[0]);
+                row[15] = `${row[1]}`;
+                row[14] = (row[9] * row[10]) / 100;  // Equivalent formula
+                row.splice(16, 1);
+    
+                // Reorder columns
+                const reorderedRow = [
+                    row[0],
+                    row[15],
+                    row[2],
+                    row[14],
+                    row[11],
+                    row[7],
+                    row[4],
+                    row[5],
+                    row[6],
+                    row[8],
+                    row[12],
+                    row[3]
+                ];
+    
+                allData4.push(reorderedRow);
+            });
+           
+
+function getTeamLeague4(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData4.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague4(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData4.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData4.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+  
+
+    
+    Promise.all(fetchPromises3)
+        .then(responses3 => {
+            processAndStoreData3(responses3);
+    
+        
+            // Fetch and process the remaining files
+            Promise.all(fetchPromises4)
+                .then(responses4 => {
+                    processAndStoreData4(responses4);
+    
+
+                    // Concatenate intermediate data with new data
+                    const finalData = allData3.concat(allData4);
+    
+                    // Reset and assign new unique IDs
+                    finalData.forEach((row, index) => {
+                        row[0] = `${index + 1}`;
+                    });
+                    
+                    finalData.forEach(row => {
+                        allDataAsString2 += row.join(',') + '\n';
+                    });
+    
+
+                    let csvData2 = allDataAsString2.split('\\n').join('\n');
+let rows2 = csvData2.split('\n');
+rows2.pop();
+csvData2 = rows2.join('\n');
+
+const fetchPromises5 = urls5.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises6 = urls6.map(url => fetch(url).then(response => response.arrayBuffer()));
+
+    function processAndStoreData5(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+    
+                // Reorder columns
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[8],
+                row[10],
+                row[11],
+                row[5],
+                row[6],
+                row[7],
+                row[9],
+                row[4],
+                row[3]
+                ];
+                allData5.push(reorderedRow);
+            });
+         
+
+function getTeamLeague5(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData5.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague5(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData5.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData5.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+    function processAndStoreData6(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[8],
+                row[10],
+                row[11],
+                row[5],
+                row[6],
+                row[7],
+                row[9],
+                row[4],
+                row[3]
+                ];
+    
+                allData6.push(reorderedRow);
+            });
+           
+
+function getTeamLeague6(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData6.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague6(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData6.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData6.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+  
+
+    
+    Promise.all(fetchPromises5)
+        .then(responses5 => {
+            processAndStoreData5(responses5);
+    
+        
+            // Fetch and process the remaining files
+            Promise.all(fetchPromises6)
+                .then(responses6 => {
+                    processAndStoreData6(responses6);
+    
+
+                    // Concatenate intermediate data with new data
+                    const finalData = allData5.concat(allData6);
+    
+                    // Reset and assign new unique IDs
+                    finalData.forEach((row, index) => {
+                        row[0] = `${index + 1}`;
+                    });
+                    
+                    finalData.forEach(row => {
+                        allDataAsString3 += row.join(',') + '\n';
+                    });
+    
+
+                    let csvData3 = allDataAsString3.split('\\n').join('\n');
+let rows3 = csvData3.split('\n');
+rows3.pop();
+csvData3 = rows3.join('\n');
+
+
+const fetchPromises7 = urls7.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises8 = urls8.map(url => fetch(url).then(response => response.arrayBuffer()));
+
+    function processAndStoreData7(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+    
+                // Reorder columns
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[5],
+              row[6],
+              row[7],
+              row[8],
+              row[9],
+              row[10],
+              row[11],
+              row[4],
+                row[3]
+                ];
+                allData7.push(reorderedRow);
+            });
+         
+
+function getTeamLeague7(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData7.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague7(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData7.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData7.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+    function processAndStoreData8(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+    
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[5],
+              row[6],
+              row[7],
+              row[8],
+              row[9],
+              row[10],
+              row[11],
+              row[4],
+                row[3]
+                ];
+    
+                allData8.push(reorderedRow);
+            });
+           
+
+function getTeamLeague8(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData8.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague8(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData8.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData8.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+  
+
+    
+    Promise.all(fetchPromises7)
+        .then(responses7 => {
+            processAndStoreData7(responses7);
+    
+        
+            // Fetch and process the remaining files
+            Promise.all(fetchPromises8)
+                .then(responses8 => {
+                    processAndStoreData8(responses8);
+    
+
+                    // Concatenate intermediate data with new data
+                    const finalData = allData7.concat(allData8);
+    
+                    // Reset and assign new unique IDs
+                    finalData.forEach((row, index) => {
+                        row[0] = `${index + 1}`;
+                    });
+                    
+                    finalData.forEach(row => {
+                        allDataAsString4 += row.join(',') + '\n';
+                    });
+    
+
+
+                    let csvData4 = allDataAsString4.split('\\n').join('\n');
+let rows4 = csvData4.split('\n');
+rows4.pop();
+csvData4 = rows4.join('\n');
+
+
+
+const fetchPromises9 = urls9.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises10 = urls10.map(url => fetch(url).then(response => response.arrayBuffer()));
+
+    function processAndStoreData9(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+                row[14] = (row[9] * row[10]) / 100;  // Equivalent formula
+              row[16] = (row[7] + row[12]);  // Equivalent formula
+
+
+                // Reorder columns
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[11],
+                  row[14],
+                  row[6],
+                  row[16],
+                  row[8],
+                  row[13],
+                  row[5],
+                  row[4],
+                row[3]
+                ];
+                allData9.push(reorderedRow);
+            });
+         
+
+function getTeamLeague9(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData9.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague9(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData9.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData9.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+    function processAndStoreData10(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+                row[14] = (row[9] * row[10]) / 100;  // Equivalent formula
+              row[16] = (row[7] + row[12]);  // Equivalent formula
+    
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[11],
+                  row[14],
+                  row[6],
+                  row[16],
+                  row[8],
+                  row[13],
+                  row[5],
+                  row[4],
+                row[3]
+                ];
+    
+                allData10.push(reorderedRow);
+            });
+           
+
+function getTeamLeague10(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData10.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague10(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData10.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData10.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+  
+
+    
+    Promise.all(fetchPromises9)
+        .then(responses9 => {
+            processAndStoreData9(responses9);
+    
+        
+            // Fetch and process the remaining files
+            Promise.all(fetchPromises10)
+                .then(responses10 => {
+                    processAndStoreData10(responses10);
+    
+
+                    // Concatenate intermediate data with new data
+                    const finalData = allData9.concat(allData10);
+    
+                    // Reset and assign new unique IDs
+                    finalData.forEach((row, index) => {
+                        row[0] = `${index + 1}`;
+                    });
+                    
+                    finalData.forEach(row => {
+                        allDataAsString5 += row.join(',') + '\n';
+                    });
+    
+
+                    let csvData5 = allDataAsString5.split('\\n').join('\n');
+let rows5 = csvData5.split('\n');
+rows5.pop();
+csvData5 = rows5.join('\n');
+
+const fetchPromises11 = urls11.map(url => fetch(url).then(response => response.arrayBuffer()));
+const fetchPromises12 = urls12.map(url => fetch(url).then(response => response.arrayBuffer()));
+
+    function processAndStoreData11(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+    
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[9],
+              row[5],
+              row[7],
+              row[8],
+              row[11],
+              row[10],
+              row[6],
+              row[4],
+                row[3]
+                ];
+                allData11.push(reorderedRow);
+            });
+         
+
+function getTeamLeague11(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData11.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague11(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData11.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData11.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+    function processAndStoreData12(dataArray) {
+        // Unique ID counter
+        let uniqueIdCounter = 1;
+    
+        dataArray.forEach(data => {
+            const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const sheet = workbook.Sheets[sheetName];
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+    
+            // Exclude header row
+            const dataWithoutHeader = jsonData.slice(1);
+    
+            // Perform transformations and add unique ID
+            dataWithoutHeader.forEach(row => {
+                // Generate unique ID and shift columns
+                row.unshift(`${uniqueIdCounter++}`);
+    
+                // Shift columns as needed
+
+                row[15] = `${row[1]}`;
+    
+                const reorderedRow = [
+                row[0],
+                row[15],
+                row[2],
+                row[9],
+              row[5],
+              row[7],
+              row[8],
+              row[11],
+              row[10],
+              row[6],
+              row[4],
+                row[3]
+                ];
+                allData12.push(reorderedRow);
+            });
+           
+
+function getTeamLeague12(team) {
+          for (const [league, teams] of Object.entries(leagues)) {
+              if (teams.includes(team)) {
+                  return league;
+              }
+          }
+          return "Unknown League";
+      }
+
+      const outputLines = [];
+      allData12.forEach(row => {
+          if (row.length >= 3) {
+              const team = row[2];
+              const league = getTeamLeague12(team);
+              row[12] = league; // Replace the third element with the league information
+              outputLines.push(row.join(",")); // Join the modified parts back into a line
+          } else {
+              // Handle rows that don't have at least 3 elements as needed
+              outputLines.push(row.join(","));
+          }
+      });
+        });
+    
+        // Extract values from columns 4, 5, 6, 7, 8, 9, and 10
+        const columnsToConvert = [3, 4, 5, 6, 7, 8, 9];
+        const columnValues = columnsToConvert.map(col => allData12.map(row => parseFloat(row[col])));
+    
+        // Calculate percentiles
+        const percentiles = columnValues.map(values => {
+            const sorted = [...values].sort((a, b) => a - b);
+            return values.map(value => {
+                const rank = sorted.indexOf(value) + 1;
+                return (rank / sorted.length);
+            });
+        });
+    
+        // Replace original values with percentiles
+        allData12.forEach((row, rowIndex) => {
+            columnsToConvert.forEach((col, colIndex) => {
+                row[col] = percentiles[colIndex][rowIndex].toFixed(3);
+            });
+        });
+    }
+
+  
+
+    
+    Promise.all(fetchPromises11)
+        .then(responses11 => {
+            processAndStoreData11(responses11);
+    
+        
+            // Fetch and process the remaining files
+            Promise.all(fetchPromises12)
+                .then(responses12 => {
+                    processAndStoreData12(responses12);
+    
+
+                    // Concatenate intermediate data with new data
+                    const finalData = allData11.concat(allData12);
+    
+                    // Reset and assign new unique IDs
+                    finalData.forEach((row, index) => {
+                        row[0] = `${index + 1}`;
+                    });
+                    
+                    finalData.forEach(row => {
+                        allDataAsString6 += row.join(',') + '\n';
+                    });
+    
+
+                    let csvData6 = allDataAsString6.split('\\n').join('\n');
+let rows6 = csvData6.split('\n');
+rows6.pop();
+csvData6 = rows6.join('\n');
+
+
+let selectedLeague = "All"; // Declare the selectedLeague variable outside the event listener
+
+document.getElementById('league').addEventListener('change', function () {
+  selectedLeague = this.value;
+});
+    // Store data for each dataset in separate arrays
+    const dataArray1 = csvData1.split('\n').map(line => line.split(','));
+    const dataArray2 = csvData2.split('\n').map(line => line.split(','));
+    const dataArray3 = csvData3.split('\n').map(line => line.split(','));
+    const dataArray4 = csvData4.split('\n').map(line => line.split(','));
+    const dataArray5 = csvData5.split('\n').map(line => line.split(','));
+    const dataArray6 = csvData6.split('\n').map(line => line.split(','));
+
+
+
+
+
+ const metricNames1 = [
+      'Def actions',
+      'Aerials',
+      'Exit line',
+      'Passes',
+      'Long pass%',
+      'Short pass%',
+      'PSxG - GA'
+    ];
+
+    // Metric names for CB
+    const metricNames2 = [
+      'Passes',
+      'Forward pass%',
+      'Prog passes',
+      'Def actions',
+      'Def duel%',
+      'Aerial%',
+      'Prog carries'
+    ];
+
+    // Metric names for FB
+    const metricNames3 = [
+      'Cross%',
+      'xA',
+      'Prog passes',
+      'Def actions',
+      'Def duel%',
+      'Aerial%',
+      'Prog carries'
+    ];
+
+    // Metric names for CM
+    const metricNames4 = [
+      'Duel%',
+      'Def actions',
+      'Prog carries',
+      'Forward passes',
+      'Forward pass%',
+      'Key passes',
+      'Prog passes'
+    ];
+
+    // Metric names for FW
+    const metricNames5 = [
+      'Prog carries',
+      'Dribbles',
+      'NPG',
+      'xG+xA',
+      'Assists',
+      'Key passes',
+      'Off actions'
+    ];
+
+    // Metric names for ST
+    const metricNames6 = [
+      'Pass received',
+      'Aerial%',
+      'NPG',
+      'xG',
+      'Pass to pen',
+      'xA',
+      'Off actions'
+    ];
+
+
+    // Function to update metric labels based on the selected dataset
+  function updateMetricLabels(dataset) {
+    const labels = document.querySelectorAll('label[for]');
+    const inputs = document.querySelectorAll('input[type="number"]');
+    let position = '';
+    
+    // Determine position code based on dataset
+    switch(dataset) {
+      case 'dataset1': position = 'gk'; break;
+      case 'dataset2': position = 'cb'; break;
+      case 'dataset3': position = 'fb'; break;
+      case 'dataset4': position = 'cm'; break;
+      case 'dataset5': position = 'fw'; break;
+      case 'dataset6': position = 'st'; break;
+    }
+
+    // Update metric labels based on position
+    if (position === 'gk') {
+      updateLabel('defensiveActions', 'metrics.gk.def_actions');
+      updateLabel('aerialsContested', 'metrics.gk.aerials');
+      updateLabel('exitLine', 'metrics.gk.exit_line');
+      updateLabel('passes', 'metrics.gk.passes');
+      updateLabel('longPassPercentage', 'metrics.gk.long_pass');
+      updateLabel('shortPassPercentage', 'metrics.gk.short_pass');
+      updateLabel('psxg', 'metrics.gk.psxg_ga');
+    } else if (position === 'cb') {
+      updateLabel('defensiveActions', 'metrics.cb.passes');
+      updateLabel('aerialsContested', 'metrics.cb.forward_pass');
+      updateLabel('exitLine', 'metrics.cb.prog_passes');
+      updateLabel('passes', 'metrics.cb.def_actions');
+      updateLabel('longPassPercentage', 'metrics.cb.def_duel');
+      updateLabel('shortPassPercentage', 'metrics.cb.aerial');
+      updateLabel('psxg', 'metrics.cb.prog_carries');
+    } else if (position === 'fb') {
+      updateLabel('defensiveActions', 'metrics.fb.cross');
+      updateLabel('aerialsContested', 'metrics.fb.xa');
+      updateLabel('exitLine', 'metrics.fb.prog_passes');
+      updateLabel('passes', 'metrics.fb.def_actions');
+      updateLabel('longPassPercentage', 'metrics.fb.def_duel');
+      updateLabel('shortPassPercentage', 'metrics.fb.aerial');
+      updateLabel('psxg', 'metrics.fb.prog_carries');
+    } else if (position === 'cm') {
+      updateLabel('defensiveActions', 'metrics.cm.duel');
+      updateLabel('aerialsContested', 'metrics.cm.def_actions');
+      updateLabel('exitLine', 'metrics.cm.prog_carries');
+      updateLabel('passes', 'metrics.cm.forward_passes');
+      updateLabel('longPassPercentage', 'metrics.cm.forward_pass');
+      updateLabel('shortPassPercentage', 'metrics.cm.key_passes');
+      updateLabel('psxg', 'metrics.cm.prog_passes');
+    } else if (position === 'fw') {
+      updateLabel('defensiveActions', 'metrics.fw.prog_carries');
+      updateLabel('aerialsContested', 'metrics.fw.dribbles');
+      updateLabel('exitLine', 'metrics.fw.npg');
+      updateLabel('passes', 'metrics.fw.xg_xa');
+      updateLabel('longPassPercentage', 'metrics.fw.assists');
+      updateLabel('shortPassPercentage', 'metrics.fw.key_passes');
+      updateLabel('psxg', 'metrics.fw.off_actions');
+    } else if (position === 'st') {
+      updateLabel('defensiveActions', 'metrics.st.pass_received');
+      updateLabel('aerialsContested', 'metrics.st.aerial');
+      updateLabel('exitLine', 'metrics.st.npg');
+      updateLabel('passes', 'metrics.st.xg');
+      updateLabel('longPassPercentage', 'metrics.st.pass_to_pen');
+      updateLabel('shortPassPercentage', 'metrics.st.xa');
+      updateLabel('psxg', 'metrics.st.off_actions');
+    }
+
+    // Reapply translations after updating data-i18n attributes
+    applyTranslations();
+  }
+
+  function updateLabel(forAttribute, translationKey) {
+    const label = document.querySelector(`label[for="${forAttribute}"]`);
+    if (label) {
+      label.setAttribute('data-i18n', translationKey);
+    }
+  }
+
+  document.getElementById('datasetSelector').addEventListener('change', function () {
+    const selectedDataset = document.getElementById('datasetSelector').value;
+    updateMetricLabels(selectedDataset);
+    clearSearchInputs();
+  });
+
+  // Initialize the metric labels based on the default dataset
+  updateMetricLabels('dataset1');
+
+
+
+    function clearSearchInputs() {
+      // Clear all input fields
+      const inputs = document.querySelectorAll('input[type="number"]');
+      inputs.forEach(input => (input.value = ''));
+
+      // Clear the results container
+      const resultsContainer = document.getElementById('resultsContainer');
+      resultsContainer.innerHTML = '';
+    }
+
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  // Get the selected dataset and league
+  const selectedDataset = document.getElementById('datasetSelector').value;
+  selectedLeague = document.getElementById('league').value;
+
+    // Get the user-entered percentile values from the form
+    const defensiveActionsLow = parseInt(document.getElementById('defensiveActionsLow').value);
+    const aerialsContestedLow = parseInt(document.getElementById('aerialsContestedLow').value);
+    const exitLineLow = parseInt(document.getElementById('exitLineLow').value);
+    const passesLow = parseInt(document.getElementById('passesLow').value);
+    const longPassPercentageLow = parseInt(document.getElementById('longPassPercentageLow').value);
+    const shortPassPercentageLow = parseInt(document.getElementById('shortPassPercentageLow').value);
+    const psxgLow = parseInt(document.getElementById('psxgLow').value);
+    const ageLow = parseInt(document.getElementById('ageLow').value);
+    const ageHigh = parseInt(document.getElementById('ageHigh').value);
+    const minutesPlayedLow = parseInt(document.getElementById('minutesPlayedLow').value);
+    const minutesPlayedHigh = parseInt(document.getElementById('minutesPlayedHigh').value);
+
+    // Determine the dataArray based on the selected dataset
+    let dataArray;
+    switch (selectedDataset) {
+      case 'dataset2':
+        dataArray = dataArray2;
+        break;
+      case 'dataset3':
+        dataArray = dataArray3;
+        break;
+      case 'dataset4':
+        dataArray = dataArray4;
+        break;
+      case 'dataset5':
+        dataArray = dataArray5;
+        break;
+      case 'dataset6':
+        dataArray = dataArray6;
+        break;
+      default:
+        dataArray = dataArray1;
+    }
+
+    // Filter the dataArray based on user-entered percentiles
+    const restrictedPlayers = reverseSearch(
+  [
+    [defensiveActionsLow],
+    [aerialsContestedLow],
+    [exitLineLow],
+    [passesLow],
+    [longPassPercentageLow],
+    [shortPassPercentageLow],
+    [psxgLow],
+    [ageLow, ageHigh],
+    [minutesPlayedLow, minutesPlayedHigh]
+  ],
+  dataArray, // Pass the dataArray as a parameter
+  selectedLeague // Pass the selected league as a parameter
+);
+const resultsContainer = document.getElementById('resultsContainer');
+resultsContainer.innerHTML = '';
+
+if (restrictedPlayers.length === 0) {
+  const noResultsMessage = document.createElement('p');
+  noResultsMessage.setAttribute('data-i18n', 'search.no_results');
+  noResultsMessage.classList.add('no-results-message'); // Add a class to the element
+  resultsContainer.appendChild(noResultsMessage);
+  applyTranslations(); // Apply translations after adding the element
+} else {
+  // Create the table element
+  const table = document.createElement('table');
+
+  // Create the table header
+  const tableHeader = createTableHeader();
+  table.appendChild(tableHeader);
+
+  // Create the table body
+  const tableBody = document.createElement('tbody');
+
+  // Add the player data rows to the table body
+  restrictedPlayers.forEach(playerData => {
+    const playerRow = document.createElement('tr');
+    tableBody.appendChild(playerRow);
+
+    // Add the player name and other info in the first column
+    const playerNameCell = document.createElement('td');
+    const playerName = playerData[1];
+    const playerData2 = playerData[2];
+    const playerData11 = playerData[11];
+    const playerData10 = playerData[10];
+
+
+    // Create a formatted HTML string
+    const formattedText = `<span>${playerName}</span><br><span class="player-info">${playerData11}, ${playerData2}, ${playerData10} min</span>`;
+
+    // Set the formatted HTML as the content of playerNameCell
+    playerNameCell.innerHTML = formattedText;
+    playerRow.appendChild(playerNameCell);
+
+    // Add the player metric values in the subsequent columns
+      for (let i = 3; i <= 9; i++) {
+  const metricValueCell = document.createElement('td');
+  const numericValue = (parseFloat(playerData[i]) * 100).toFixed(2);
+
+  // Apply the color inline style based on the value range
+  metricValueCell.textContent = numericValue;
+  if (numericValue >= 75 && numericValue <= 100) {
+    metricValueCell.style.color = 'green';
+  } else if (numericValue >= 0 && numericValue <= 25) {
+    metricValueCell.style.color = 'red';
+  }
+  
+  playerRow.appendChild(metricValueCell);
+}
+  });
+
+  // Append the table body to the table
+  table.appendChild(tableBody);
+
+  // Append the table to the wrapper container
+  const tableWrapper = document.getElementById('tableWrapper');
+  tableWrapper.innerHTML = ''; // Clear any previous content
+  tableWrapper.appendChild(table);
+}
+
+    });
+
+let sortColumnIndex = -1;
+let ascending = true;
+
+function createTableHeader() {
+  const tableHeader = document.createElement('thead');
+  const headerRow = document.createElement('tr');
+  const selectedDataset = document.getElementById('datasetSelector').value;
+  let metricLabels;
+  let position = '';
+  
+  // Determine position code based on dataset
+  switch(selectedDataset) {
+    case 'dataset2':
+      position = 'cb';
+      metricLabels = metricNames2;
+      break;
+    case 'dataset3':
+      position = 'fb';
+      metricLabels = metricNames3;
+      break;
+    case 'dataset4':
+      position = 'cm';
+      metricLabels = metricNames4;
+      break;
+    case 'dataset5':
+      position = 'fw';
+      metricLabels = metricNames5;
+      break;
+    case 'dataset6':
+      position = 'st';
+      metricLabels = metricNames6;
+      break;
+    default:
+      position = 'gk';
+      metricLabels = metricNames1;
+      break;
+  }
+
+  const emptyHeaderCell = document.createElement('th');
+  emptyHeaderCell.textContent = '';
+  headerRow.appendChild(emptyHeaderCell);
+
+  // Create array of metric keys based on position
+  const metricKeys = position === 'gk' ? 
+    ['def_actions', 'aerials', 'exit_line', 'passes', 'long_pass', 'short_pass', 'psxg_ga'] :
+    position === 'cb' ?
+    ['passes', 'forward_pass', 'prog_passes', 'def_actions', 'def_duel', 'aerial', 'prog_carries'] :
+    position === 'fb' ?
+    ['cross', 'xa', 'prog_passes', 'def_actions', 'def_duel', 'aerial', 'prog_carries'] :
+    position === 'cm' ?
+    ['duel', 'def_actions', 'prog_carries', 'forward_passes', 'forward_pass', 'key_passes', 'prog_passes'] :
+    position === 'fw' ?
+    ['prog_carries', 'dribbles', 'npg', 'xg_xa', 'assists', 'key_passes', 'off_actions'] :
+    ['pass_received', 'aerial', 'npg', 'xg', 'pass_to_pen', 'xa', 'off_actions'];
+
+  for (let i = 0; i < metricLabels.length; i++) {
+    const headerCell = document.createElement('th');
+    const translationKey = `metrics.${position}.${metricKeys[i]}`;
+    const translation = getNestedTranslation(translations, translationKey);
+    headerCell.textContent = translation || metricLabels[i]; // Fallback to original label if translation not found
+    headerCell.style.cursor = 'pointer';
+
+    // Add click event listener to the header cell for sorting
+    headerCell.addEventListener('click', () => {
+      sortColumn(i);
+    });
+
+    headerRow.appendChild(headerCell);
+  }
+
+  tableHeader.appendChild(headerRow);
+  return tableHeader;
+}
+
+
+function sortColumn(columnIndex) {
+  // Check if it's a different column or the same column that needs to be reversed
+  if (sortColumnIndex === columnIndex) {
+    ascending = !ascending;
+  } else {
+    ascending = false;
+    sortColumnIndex = columnIndex;
+  }
+
+  // Get the table body rows
+  const tableBody = document.querySelector('tbody');
+  const rows = Array.from(tableBody.querySelectorAll('tr'));
+
+  // Sort the rows based on the selected column
+  rows.sort((row1, row2) => {
+    const value1 = parseFloat(row1.children[columnIndex + 1].textContent);
+    const value2 = parseFloat(row2.children[columnIndex + 1].textContent);
+
+    if (ascending) {
+      return value1 - value2;
+    } else {
+      return value2 - value1;
+    }
+  });
+
+  // Clear the current table body content
+  tableBody.innerHTML = '';
+
+  // Append the sorted rows to the table body
+  rows.forEach(row => {
+    tableBody.appendChild(row);
+  });
+}
+
+
+  document.getElementById('datasetSelector').addEventListener('change', function () {
+    const selectedDataset = document.getElementById('datasetSelector').value;
+
+    // Call the function with the selected dataset to update the metric labels
+    switch (selectedDataset) {
+      case 'dataset2':
+        updateMetricLabels('dataset2');
+        break;
+      case 'dataset3':
+        updateMetricLabels('dataset3');
+        break;
+      case 'dataset4':
+        updateMetricLabels('dataset4');
+        break;
+      case 'dataset5':
+        updateMetricLabels('dataset5');
+        break;
+      case 'dataset6':
+        updateMetricLabels('dataset6');
+        break;
+      default:
+        updateMetricLabels('dataset1');
+        break;
+    }
+
+    // Clear the search inputs and results when the dataset selector changes
+    clearSearchInputs();
+});
+
+function reverseSearch(percentiles, dataArray, selectedLeague) {
+  return dataArray.filter(data => {
+    for (let i = 3; i <= 9; i++) {
+      const metricValue = parseFloat(data[i]) * 100;
+      if (metricValue < percentiles[i - 3][0]) {
+        return false;
+      }
+    }
+
+    const age = parseInt(data[11]);
+    if (age < percentiles[7][0] || age > percentiles[7][1]) {
+      return false;
+    }
+
+    const minutesPlayed = parseInt(data[10]);
+    if (minutesPlayed < percentiles[8][0] || (percentiles[8][1] && minutesPlayed > percentiles[8][1])) {
+      return false;
+    }
+
+    if (selectedLeague !== "All") {
+  if (selectedLeague === "Top 7 Leagues") {
+    const topSevenLeagues = [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1",
+      "Eredivisie",
+      "Liga Portugal"
+    ];
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (!topSevenLeagues.includes(playerLeague)) {
+      return false;
+    }
+  } else if (selectedLeague === "Top 5 Leagues") {
+    const topFiveLeagues = [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1"
+    ];
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (!topFiveLeagues.includes(playerLeague)) {
+      return false;
+    }
+  } else if (selectedLeague === "Non Top 7 Leagues") {
+    const dataMBProLeagues = [
+      "Scotland Premiership",
+      "Belgium Pro League",
+      "Swiss Super League",
+      "Ukraine",
+      "Poland",
+      "Greece",
+      "Israel",
+      "Russia",
+      "Colombia",
+      "Chile",
+      "Paraguay",
+      "Ecuador",
+      "Austrian Bundesliga",
+      "Süper Lig",
+      "Saudi Pro League",
+      "Brazil Serie A",
+      "Argentina Primera",
+      "Uruguay Primera",
+      "LigaMX",
+      "MLS",
+      "K League 1",
+      "J1 League",
+      "Norway Eliteserien",
+      "Denmark Superliga",
+      "Sweden Allsvenskan",
+      "Czech Fortuna Liga",
+      "Serbia SuperLiga",
+      "Croatia HNL",
+      "Championship",
+      "Segunda Division",
+      "Bundesliga 2",
+      "Serie B",
+      "Ligue 2",
+      "Unknown League"
+    ];
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (!dataMBProLeagues.includes(playerLeague)) {
+      return false;
+    }
+  } else if (selectedLeague === "South America") {
+    const southAmericaLeagues = [
+      "Brazil Serie A",
+      "Argentina Primera",
+      "Uruguay Primera",
+      "Colombia",
+      "Chile",
+      "Paraguay",
+      "Ecuador",
+    ];
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (!southAmericaLeagues.includes(playerLeague)) {
+      return false;
+    }
+  } else if (selectedLeague === "Scandinavia") {
+    const scandinaviaLeagues = [
+      "Norway Eliteserien",
+      "Denmark Superliga",
+      "Sweden Allsvenskan"
+    ];
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (!scandinaviaLeagues.includes(playerLeague)) {
+      return false;
+    }
+  } else if (selectedLeague === "Balkans") {
+    const balkansLeagues = [
+      "Czech Fortuna Liga",
+      "Serbia SuperLiga",
+      "Croatia HNL",
+      "Russia",
+      "Ukraine",
+      "Poland"
+    ];
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (!balkansLeagues.includes(playerLeague)) {
+      return false;
+    }
+  } else if (selectedLeague === "Top 5 Leagues - 2nd Div.") {
+    const secondDivLeagues = [
+      "Championship",
+      "Segunda Division",
+      "Bundesliga 2",
+      "Serie B",
+      "Ligue 2"
+    ];
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (!secondDivLeagues.includes(playerLeague)) {
+      return false;
+    }
+  } else {
+    const playerLeague = data[12]; // Assuming the league is in the 12th column (index 11)
+    if (playerLeague !== selectedLeague) {
+      return false;
+    }
+  }
+}
+
+return true;
+});
+}
+
+  // Initialize with preferred or default language
+  document.addEventListener('DOMContentLoaded', () => {
+    const preferredLanguage = getPreferredLanguage();
+    loadTranslations(preferredLanguage);
+  });
+
+})}) })}) })}) })}) })}) })}) 
+</script></div>
 
 <script>
 
@@ -761,9 +2616,103 @@ const _0x465e75=_0x4820;(function(_0x6854fc,_0x1dae7c){const _0x1e3a73=_0x4820,_
 
   </script>
 
+<script>
+  // Translation functionality
+  let currentLanguage = 'en';
+  let translations = {};
+
+  // Load translations
+  async function loadTranslations(lang) {
+    try {
+      const response = await fetch(`./locales/${lang}.json`);
+      translations = await response.json();
+      applyTranslations();
+    } catch (error) {
+      console.error('Error loading translations:', error);
+    }
+  }
+
+  // Apply translations to all elements with data-i18n attribute
+  function applyTranslations() {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.getAttribute('data-i18n');
+      const translation = getNestedTranslation(translations, key);
+      if (translation) {
+        element.textContent = translation;
+      }
+    });
+
+    // Apply translations to placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+      const key = element.getAttribute('data-i18n-placeholder');
+      const translation = getNestedTranslation(translations, key);
+      if (translation) {
+        element.placeholder = translation;
+      }
+    });
+
+    // Update dataset selector options
+    const datasetSelector = document.getElementById('datasetSelector');
+    if (datasetSelector) {
+      const positions = translations.position;
+      if (positions) {
+        datasetSelector.options[0].textContent = positions.goalkeepers;
+        datasetSelector.options[1].textContent = positions['centre-backs'];
+        datasetSelector.options[2].textContent = positions['full-backs'];
+        datasetSelector.options[3].textContent = positions.midfielders;
+        datasetSelector.options[4].textContent = positions.wingers;
+        datasetSelector.options[5].textContent = positions.strikers;
+      }
+    }
+  }
+
+  // Helper function to get nested translations
+  function getNestedTranslation(obj, path) {
+    return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+  }
+
+  // Language switcher
+  function switchLanguage(lang) {
+    currentLanguage = lang;
+    loadTranslations(lang);
+    // Store language preference
+    localStorage.setItem('preferredLanguage', lang);
+  }
+
+function setLanguage(language) {
+  localStorage.setItem('preferredLanguage', language);
+  const url = new URL(window.location.href);
+  if (language === 'en') {
+    url.searchParams.delete('lang');
+  } else {
+    url.searchParams.set('lang', language);
+  }
+  window.history.pushState({}, '', url);
+  applyLanguage(language);
+}
+
+function getPreferredLanguage() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const langParam = urlParams.get('lang');
+  if (langParam) {
+    return langParam;
+  }
+  return localStorage.getItem('preferredLanguage') || getBrowserLanguage() || 'en';
+}
+
+function getBrowserLanguage() {
+  return navigator.language.slice(0, 2);
+}
+
+  // Initialize with preferred or default language
+  document.addEventListener('DOMContentLoaded', () => {
+  const preferredLanguage = getPreferredLanguage();
+    loadTranslations(preferredLanguage);
+  });
+</script>
 
 <a href="https://datamb.football/prosearch/" target="_self" rel="noopener noreferrer">
-  <button class="button-6" role="button">Switch to 2023/24</button></a>
+  <button class="button-6" role="button" data-i18n="switch.button">Switch to 2023/24</button></a>
   
 <div class="dark-mode-toggle" onclick="toggleDarkMode()">
     <span class="toggle-icon"></span>
