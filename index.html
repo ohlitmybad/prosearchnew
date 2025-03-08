@@ -455,15 +455,56 @@ function _0x38db(){const _0x19aa1d=['def_actions','Eyüpspor','Emelec','Alanyasp
   // Translation functionality
   let currentLanguage = 'en';
   let translations = {};
+  let availableLanguages = [];
+
+  // Check if a language JSON file exists
+  async function checkLanguageAvailability(lang) {
+    try {
+      const response = await fetch(`./locales/${lang}.json`, { method: 'HEAD' });
+      return response.ok;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  // Load available languages
+  async function loadAvailableLanguages() {
+    try {
+      const response = await fetch('./locales/available-languages.json');
+      if (response.ok) {
+        const data = await response.json();
+        availableLanguages = data.languages || [];
+      }
+    } catch (error) {
+      console.error('Could not load available languages list:', error);
+      // Continue with empty list - we'll check files directly
+    }
+  }
 
   // Load translations
   async function loadTranslations(lang) {
     try {
+      // First check if the language file exists
+      const isAvailable = await checkLanguageAvailability(lang);
+      
+      if (!isAvailable) {
+        console.warn(`Translation file for ${lang} not found, falling back to English`);
+        lang = 'en'; // Fall back to English
+      }
+      
       const response = await fetch(`./locales/${lang}.json`);
       translations = await response.json();
+      currentLanguage = lang;
       applyTranslations();
+      
+      // Store the successfully loaded language
+      localStorage.setItem('preferredLanguage', lang);
     } catch (error) {
       console.error('Error loading translations:', error);
+      // If there's an error, try to load English as fallback
+      if (lang !== 'en') {
+        loadTranslations('en');
+      }
     }
   }
 
@@ -507,42 +548,62 @@ function _0x38db(){const _0x19aa1d=['def_actions','Eyüpspor','Emelec','Alanyasp
   }
 
   // Language switcher
-  function switchLanguage(lang) {
-    currentLanguage = lang;
-    loadTranslations(lang);
-    // Store language preference
-    localStorage.setItem('preferredLanguage', lang);
+  async function switchLanguage(lang) {
+    await loadTranslations(lang);
+    updateUrlLanguageParam(lang);
   }
 
-function setLanguage(language) {
-  localStorage.setItem('preferredLanguage', language);
-  const url = new URL(window.location.href);
-  if (language === 'en') {
-    url.searchParams.delete('lang');
-  } else {
-    url.searchParams.set('lang', language);
+  // Update URL with language parameter
+  function updateUrlLanguageParam(lang) {
+    const url = new URL(window.location.href);
+    if (lang === 'en') {
+      url.searchParams.delete('lang');
+    } else {
+      url.searchParams.set('lang', lang);
+    }
+    window.history.pushState({}, '', url);
   }
-  window.history.pushState({}, '', url);
-  applyLanguage(language);
-}
 
-function getPreferredLanguage() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const langParam = urlParams.get('lang');
-  if (langParam) {
-    return langParam;
+  // Get preferred language following priority rules
+  async function getPreferredLanguage() {
+    // PRIORITY 1: URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    
+    if (langParam) {
+      return langParam; // Will be validated when loading translations
+    }
+    
+    // PRIORITY 2: Stored preference
+    const storedLang = localStorage.getItem('preferredLanguage');
+    if (storedLang) {
+      return storedLang;
+    }
+    
+    // PRIORITY 3: Browser language
+    const browserLang = navigator.language.slice(0, 2);
+    return browserLang || 'en';
   }
-  return localStorage.getItem('preferredLanguage') || getBrowserLanguage() || 'en';
-}
 
-function getBrowserLanguage() {
-  return navigator.language.slice(0, 2);
-}
+  // Initialize with preferred language following priority rules
+  document.addEventListener('DOMContentLoaded', async () => {
+    await loadAvailableLanguages();
+    const preferredLanguage = await getPreferredLanguage();
+    await loadTranslations(preferredLanguage);
+  });
 
-  // Initialize with preferred or default language
+  // Toggle dark mode function (keeping this from your original code)
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+  }
+
+  // Check for saved dark mode preference on page load
   document.addEventListener('DOMContentLoaded', () => {
-  const preferredLanguage = getPreferredLanguage();
-    loadTranslations(preferredLanguage);
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
   });
 </script>
 
