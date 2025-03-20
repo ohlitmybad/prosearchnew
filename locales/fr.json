@@ -1,0 +1,81 @@
+{
+  "position": {
+    "goalkeepers": "Gardiens",
+    "centre-backs": "Défenseurs centraux", 
+    "full-backs": "Latéraux",
+    "midfielders": "Milieux",
+    "wingers": "Ailiers",
+    "strikers": "Buteurs"
+  },
+  "league": {
+    "all": "🌎 Tous les championnats",
+    "top5": "🇪🇺 5 Grands Championnats",
+    "top7": "🇪🇺 7 Grands Championnats"
+  },
+  "search": {
+    "no_results": "Aucun joueur trouvé",
+    "age": "Âge",
+    "minutes": "Minutes jouées",
+    "button": "Rechercher",
+    "percentile": "Centile 0-100"
+  },
+  "switch": {
+    "button": "→ Saison passée"
+  },
+  "metrics": {
+    "gk": {
+      "def_actions": "Actions déf",
+      "aerials": "Duels aériens",
+      "exit_line": "Ligne de sortie",
+      "passes": "Passes",
+      "long_pass": "Passes longues%",
+      "short_pass": "Passes courtes%",
+      "psxg_ga": "PSxG - GA"
+    },
+    "cb": {
+      "passes": "Passes",
+      "forward_pass": "Passes vers l'avant%",
+      "prog_passes": "Passes progressives",
+      "def_actions": "Actions déf", 
+      "def_duel": "Duel déf%",
+      "aerial": "Aérien%",
+      "prog_carries": "Portées progressives"
+    },
+    "fb": {
+      "cross": "Centres%",
+      "xa": "xA",
+      "prog_passes": "Passes progressives",
+      "def_actions": "Actions déf",
+      "def_duel": "Duel déf%",
+      "aerial": "Aérien%",
+      "prog_carries": "Portées progressives"
+    },
+    "cm": {
+      "duel": "Duel%",
+      "def_actions": "Actions déf",
+      "prog_carries": "Portées progressives",
+      "forward_passes": "Passes vers l'avant",
+      "forward_pass": "Passes vers l'avant%",
+      "key_passes": "Passes clés",
+      "prog_passes": "Passes progressives"
+    },
+    "fw": {
+      "prog_carries": "Portées progressives",
+      "dribbles": "Dribbles",
+      "npg": "NPG",
+      "xg_xa": "xG+xA",
+      "assists": "Passes décisives",
+      "key_passes": "Passes clés",
+      "off_actions": "Actions off"
+    },
+    "st": {
+      "pass_received": "Passes reçues",
+      "aerial": "Aérien%",
+      "npg": "NPG",
+      "xg": "xG",
+      "pass_to_pen": "Passes vers la surface",
+      "xa": "xA",
+      "off_actions": "Actions off"
+    }
+  }
+} 
