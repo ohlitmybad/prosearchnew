@@ -1,81 +1,173 @@
 {
-  "position": {
-    "goalkeepers": "Gardien",
-    "centre-backs": "Défenseur central", 
-    "full-backs": "Latéral",
-    "midfielders": "Milieu",
-    "wingers": "Ailier",
-    "strikers": "Buteur"
-  },
-  "league": {
-    "all": "🌎 Tous les championnats",
-    "top5": "🇪🇺 5 Grands Championnats",
-    "top7": "🇪🇺 7 Grands Championnats"
-  },
-  "search": {
-    "no_results": "Aucun joueur trouvé",
-    "age": "Âge",
-    "minutes": "Minutes jouées",
-    "button": "Rechercher",
-    "percentile": "Centile 0-100"
-  },
-  "switch": {
-    "button": "→ Saison passée"
-  },
-"metrics": {
-      "gk": {
-        "def_actions": "Actions déf",
-        "aerials": "Duels aériens",
-        "exit_line": "Sorties",
-        "passes": "Passes",
-        "long_pass": "Passes longues%",
-        "short_pass": "Passes courtes%",
-        "psxg_ga": "Buts empêchés"
+    "leagues": {
+        "all": "Tous les championnats",
+        "top7": "7 Grands Championnats",
+        "top5": "5 Grands Championnats",
+        "belgium": "Belgique",
+        "scotland": "Écosse",
+        "austria": "Autriche",
+        "switzerland": "Suisse",
+        "turkey": "Turquie",
+        "denmark": "Danemark",
+        "sweden": "Suède",
+        "norway": "Norvège",
+        "croatia": "Croatie",
+        "serbia": "Serbie",
+        "czechrepublic": "République Tchèque",
+        "poland": "Pologne",
+        "ukraine": "Ukraine",
+        "russia": "Russie",
+        "greece": "Grèce",
+        "israel": "Israël",
+        "japan": "Japon",
+        "korea": "Corée",
+        "saudiarabia": "Arabie Saoudite",
+        "unitedstates": "MLS",
+        "mexico": "Mexique",
+        "brazil": "Brésil",
+        "argentina": "Argentine",
+        "uruguay": "Uruguay",
+        "chile": "Chili",
+        "colombia": "Colombie",
+        "ecuador": "Équateur",
+        "paraguay": "Paraguay",
+        "championship": "Championship",
+        "spain": "Segunda",
+        "serieb": "Serie B",
+        "bundesliga2": "2. Bundesliga",
+        "ligue2": "Ligue 2",
+        "outsidetop7": "Hors Top 7",
+        "southamerica": "Amérique du Sud",
+        "scandinavia": "Scandinavie",
+        "easterneurope": "Europe de l'Est"
       },
-      "cb": {
-        "passes": "Passes",
-        "forward_pass": "Passes vers l'avant%",
-        "prog_passes": "Passes progressives",
-        "def_actions": "Actions déf", 
-        "def_duel": "% Duel déf",
-        "aerial": "% Duel aérien",
-        "prog_carries": "Courses progressives"
-      },
-      "fb": {
+  "metrics1": {
+    "gk": {
+      "def_actions": "Actions défensives réussies",
+      "aerials": "Duels aériens",
+      "exit_line": "Sorties",
+      "passes": "Passes",
+      "long_pass": "Passes longues réussies %",
+      "short_pass": "Passes courtes réussies %",
+      "psxg_ga": "Buts empêchés"
+    },
+    "cb": {
+      "passes": "Passes réussies",
+      "forward_pass": "Passes vers l'avant réussies %",
+      "prog_passes": "Passes progressives",
+      "def_actions": "Actions défensives réussies",
+      "def_duel": "Duels défensifs gagnés %",
+      "aerial": "Duels aériens gagnés %",
+      "prog_carries": "Courses progressives"
+    },
+    "fb": {
+      "cross": "Centres réussis %",
+      "xa": "xA",
+      "prog_passes": "Passes progressives",
+      "def_actions": "Actions défensives réussies",
+      "def_duel": "Duels défensifs gagnés %",
+      "aerial": "Duels aériens gagnés %",
+      "prog_carries": "Courses progressives"
+    },
+    "cm": {
+      "duel": "Duels gagnés %",
+      "def_actions": "Actions défensives réussies",
+      "prog_carries": "Courses progressives",
+      "forward_passes": "Passes vers l'avant",
+      "forward_pass": "Passes vers l'avant réussies %",
+      "key_passes": "Passes clés",
+      "prog_passes": "Passes progressives"
+    },
+    "fw": {
+      "prog_carries": "Courses progressives",
+      "dribbles": "Dribbles réussis",
+      "npg": "Buts hors penalty",
+      "xg_xa": "xG + xA",
+      "assists": "Passes décisives",
+      "key_passes": "Passes clés",
+      "off_actions": "Actions offensives réussies"
+    },
+    "st": {
+      "pass_received": "Passes reçues",
+      "aerial": "Duels aériens gagnés %",
+      "npg": "Buts hors penalty",
+      "xg": "xG",
+      "pass_to_pen": "Passes vers la surface",
+      "xa": "xA",
+      "off_actions": "Actions offensives réussies"
+    }
+  },
+  "metrics": {
+    "gk": {
+      "def_actions": "Actions déf",
+      "aerials": "Duels aériens",
+      "exit_line": "Sorties",
+      "passes": "Passes",
+      "long_pass": "Long%",
+      "short_pass": "Court%",
+      "psxg_ga": "Buts empêchés"
+    },
+    "cb": {
+      "passes": "Passes",
+      "forward_pass": "Passes en av%",
+      "prog_passes": "Passes prog",
+      "def_actions": "Actions déf",
+      "def_duel": "% Duel déf",
+      "aerial": "% Duel aérien",
+      "prog_carries": "Courses prog"
+    },
+    "fb": {
         "cross": "% Centres",
         "xa": "xA",
-        "prog_passes": "Passes progressives",
+        "prog_passes": "Passes prog",
         "def_actions": "Actions déf",
         "def_duel": "% Duel déf",
         "aerial": "% Duel aérien",
-        "prog_carries": "Courses progressives"
-      },
-      "cm": {
+        "prog_carries": "Courses prog"
+    },
+    "cm": {
         "duel": "% Duel",
         "def_actions": "Actions déf",
-        "prog_carries": "Courses progressives",
-        "forward_passes": "Passes vers l'avant",
-        "forward_pass": "Passes vers l'avant%",
-        "key_passes": "Passes clés",
-        "prog_passes": "Passes progressives"
-      },
-      "fw": {
-        "prog_carries": "Courses progressives",
+        "prog_carries": "Courses prog",
+        "forward_passes": "Passes en av",
+        "forward_pass": "Passes en av%",
+        "key_Passes": "Passes clés",
+        "prog_passes": "Passes prog"
+    },
+    "fw": {
+        "progCarries": "Courses prog",
         "dribbles": "Dribbles",
-        "npg": "Buts HP",
+        "npg": "Buts hors pen",
         "xg_xa": "xG+xA",
         "assists": "Passes décisives",
         "key_passes": "Passes clés",
         "off_actions": "Actions off"
-      },
-      "st": {
-        "pass_received": "Passes reçues",
-        "aerial": "% Duel aérien",
-        "npg": "Buts HP",
-        "xg": "xG",
-        "pass_to_pen": "Passes vers surface",
-        "xa": "xA",
-        "off_actions": "Actions off"
-      }
+    },
+    "st": {
+      "pass_received": "Passes reçues",
+      "aerial": "% Duel aérien",
+      "npg": "Buts hors pen",
+      "xg": "xG",
+      "pass_to_pen": "Passes vers surface",
+      "xa": "xA",
+      "off_actions": "Actions off"
     }
+  },
+  "search": {
+    "age": "Âge",
+    "minutes": "Minutes Jouées",
+    "button": "Rechercher",
+    "no_results": "Aucun Joueur Trouvé",
+    "instructions_text": "<strong>Instructions de recherche</strong><br><br><li>Sélectionnez une position et un championnat</li><li>Entrez les valeurs minimales en centiles (0-100)</li><li>Filtrez par âge et minutes jouées</li><li>Cliquez sur l'en-tête d'une colonne pour trier selon cette métrique</li><li>Cliquez sur \"Précédent\" pour les données de la saison passée</li>"
+  },
+  "current": "Actuel",
+  "previous": "Précédent",
+  "position": {
+    "goalkeepers": "Gardiens",
+    "centre-backs": "Défenseurs centraux",
+    "full-backs": "Latéraux",
+    "midfielders": "Milieux",
+    "wingers": "Ailiers",
+    "strikers": "Buteurs"
+  }
 } 
