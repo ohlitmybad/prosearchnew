@@ -43,10 +43,10 @@
       },
   "metrics1": {
     "gk": {
-      "def_actions": "Actions défensives réussies",
-      "aerials": "Duels aériens",
-      "exit_line": "Sorties",
-      "passes": "Passes",
+      "save": "Pourcentage d'arrêts %",
+      "aerials": "Duels aériens gagnés",
+      "int": "Interceptions (PAdj)",
+      "passes": "Passes réussies",
       "long_pass": "Passes longues réussies %",
       "short_pass": "Passes courtes réussies %",
       "psxg_ga": "Buts empêchés"
@@ -54,80 +54,80 @@
     "cb": {
       "passes": "Passes réussies",
       "forward_pass": "Passes vers l'avant réussies %",
-      "prog_passes": "Passes progressives",
-      "def_actions": "Actions défensives réussies",
+      "prog_passes": "Passes progressives réussies",
+      "possWon": "Possessions gagnées",
       "def_duel": "Duels défensifs gagnés %",
       "aerial": "Duels aériens gagnés %",
       "prog_carries": "Courses progressives"
     },
     "fb": {
-      "cross": "Centres réussis %",
+      "cross": "Centres réussis",
       "xa": "xA",
-      "prog_passes": "Passes progressives",
-      "def_actions": "Actions défensives réussies",
+      "prog_passes": "Passes progressives réussies",
+      "possWon": "Possessions gagnées",
       "def_duel": "Duels défensifs gagnés %",
       "aerial": "Duels aériens gagnés %",
       "prog_carries": "Courses progressives"
     },
     "cm": {
       "duel": "Duels gagnés %",
-      "def_actions": "Actions défensives réussies",
+      "possWon": "Possessions gagnées",
       "prog_carries": "Courses progressives",
-      "forward_passes": "Passes vers l'avant",
+      "forward_passes": "Passes vers l'avant réussies",
       "forward_pass": "Passes vers l'avant réussies %",
       "key_passes": "Passes clés",
-      "prog_passes": "Passes progressives"
+      "prog_passes": "Passes progressives réussies"
     },
     "fw": {
       "prog_carries": "Courses progressives",
       "dribbles": "Dribbles réussis",
-      "npg": "Buts hors penalty",
-      "xg_xa": "xG + xA",
+      "npg": "Buts hors-penalty",
+      "xg_xa": "npxG + xA",
       "assists": "Passes décisives",
       "key_passes": "Passes clés",
-      "off_actions": "Actions offensives réussies"
+      "cross": "Centres réussis"
     },
     "st": {
-      "pass_received": "Passes reçues",
-      "aerial": "Duels aériens gagnés %",
-      "npg": "Buts hors penalty",
-      "xg": "xG",
-      "pass_to_pen": "Passes vers la surface",
+      "npg": "Buts hors-penalty",
+      "npxg": "xG hors-penalty",
+      "conv": "Taux de conversion",
       "xa": "xA",
-      "off_actions": "Actions offensives réussies"
+      "off_duel": "Duels offensifs gagnés",
+      "touches": "Touches dans la surface",
+      "aerial": "Duels aériens gagnés %"
     }
   },
   "metrics": {
     "gk": {
-      "def_actions": "Actions déf",
-      "aerials": "Duels aériens",
-      "exit_line": "Sorties",
-      "passes": "Passes",
+      "save": "Save%",
+      "aerials": "Aériens gagnés",
+      "int": "Int (PAdj)",
+      "passes": "Passes cmp",
       "long_pass": "Long%",
       "short_pass": "Court%",
       "psxg_ga": "Buts empêchés"
     },
     "cb": {
-      "passes": "Passes",
+      "passes": "Passes cmp",
       "forward_pass": "Passes en av%",
       "prog_passes": "Passes prog",
-      "def_actions": "Actions déf",
+      "possWon": "Poss gagnées",
       "def_duel": "% Duel déf",
       "aerial": "% Duel aérien",
       "prog_carries": "Courses prog"
     },
     "fb": {
-        "cross": "% Centres",
-        "xa": "xA",
-        "prog_passes": "Passes prog",
-        "def_actions": "Actions déf",
-        "def_duel": "% Duel déf",
-        "aerial": "% Duel aérien",
-        "prog_carries": "Courses prog"
+      "cross": "Centres réussis",
+      "xa": "xA",
+      "prog_passes": "Passes prog",
+      "def_actions": "Poss gagnées",
+      "def_duel": "% Duel déf",
+      "aerial": "% Duel aérien",
+      "prog_carries": "Courses prog"
     },
     "cm": {
         "duel": "% Duel",
-        "def_actions": "Actions déf",
+        "possWon": "Poss gagnées",
         "prog_carries": "Courses prog",
         "forward_passes": "Passes en av",
         "forward_pass": "Passes en av%",
@@ -136,21 +136,21 @@
     },
     "fw": {
         "progCarries": "Courses prog",
-        "dribbles": "Dribbles",
-        "npg": "Buts hors pen",
-        "xg_xa": "xG+xA",
+        "dribbles": "Dribbles réussis",
+        "npg": "Buts HP",
+        "xg_xa": "npxG+xA",
         "assists": "Passes décisives",
         "key_passes": "Passes clés",
-        "off_actions": "Actions off"
+        "cross": "Centres réussis"
     },
     "st": {
-      "pass_received": "Passes reçues",
-      "aerial": "% Duel aérien",
-      "npg": "Buts hors pen",
-      "xg": "xG",
-      "pass_to_pen": "Passes vers surface",
+      "npg": "NPG",
+      "npxg": "npxG",
+      "conv": "Goal conv%",
       "xa": "xA",
-      "off_actions": "Actions off"
+      "off_duel": "Duels off gagnés",
+      "touches": "Touches surface",
+      "aerial": "% Duel aérien"
     }
   },
   "search": {
