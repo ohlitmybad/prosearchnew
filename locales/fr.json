@@ -135,7 +135,7 @@
         "prog_passes": "Passes prog"
     },
     "fw": {
-        "progCarries": "Courses prog",
+        "prog_carries": "Courses prog",
         "dribbles": "Dribbles réussis",
         "npg": "Buts HP",
         "xg_xa": "npxG+xA",
