@@ -1,0 +1,188 @@
+{
+  "leagues": {
+    "all": "Alle Ligen",
+    "top7": "Top 7 Ligen",
+    "top5": "Top 5 Ligen",
+    "belgium": "Belgien",
+    "scotland": "Schottland",
+    "austria": "Österreich",
+    "switzerland": "Schweiz",
+    "turkey": "Türkei",
+    "denmark": "Dänemark",
+    "sweden": "Schweden",
+    "norway": "Norwegen",
+    "croatia": "Kroatien",
+    "serbia": "Serbien",
+    "czechrepublic": "Tschechien",
+    "poland": "Polen",
+    "ukraine": "Ukraine",
+    "russia": "Russland",
+    "greece": "Griechenland",
+    "israel": "Israel",
+    "japan": "Japan",
+    "korea": "Korea",
+    "saudiarabia": "Saudi-Arabien",
+    "unitedstates": "MLS",
+    "mexico": "Mexiko",
+    "brazil": "Brasilien",
+    "argentina": "Argentinien",
+    "uruguay": "Uruguay",
+    "chile": "Chile",
+    "colombia": "Kolumbien",
+    "ecuador": "Ecuador",
+    "paraguay": "Paraguay",
+    "championship": "Championship",
+    "spain": "Segunda División",
+    "serieb": "Serie B",
+    "bundesliga2": "2. Bundesliga",
+    "ligue2": "Ligue 2",
+    "outsidetop7": "Außerhalb Top 7",
+    "southamerica": "Südamerika",
+    "scandinavia": "Skandinavien",
+    "easterneurope": "Osteuropa",
+    "uae": "VAE",
+    "australia": "Australien",
+    "slovenia": "Slowenien",
+    "cyprus": "Zypern",
+    "southafrica": "Südafrika",
+    "qatar": "Katar",
+    "egypt": "Ägypten",
+    "morocco": "Marokko",
+    "romania": "Rumänien",
+    "bulgaria": "Bulgarien",
+    "hungary": "Ungarn",
+    "slovakia": "Slowakei",
+    "ligaportugal2": "Liga Portugal 2",
+    "leagueone": "League One",
+    "eerstedivisie": "Eerste Divisie"
+  },
+  "metrics1": {
+    "gk": {
+      "save": "Paraden %",
+      "aerials": "Kopfballduelle gewonnen",
+      "int": "Abfangen (PAdj)",
+      "passes": "Pässe gespielt",
+      "long_pass": "Lange Pässe %",
+      "short_pass": "Kurze Pässe %",
+      "psxg_ga": "Verhinderte Tore"
+    },
+    "cb": {
+      "passes": "Pässe gespielt",
+      "forward_pass": "Vorwärtspässe %",
+      "prog_passes": "Progressive Pässe gespielt",
+      "possWon": "Balleroberungen",
+      "def_duel": "Defensivduelle gewonnen %",
+      "aerial": "Kopfballduelle gewonnen %",
+      "prog_carries": "Progressive Läufe"
+    },
+    "fb": {
+      "cross": "Flanken gespielt",
+      "xa": "Erwartete Assists",
+      "prog_passes": "Progressive Pässe gespielt",
+      "def_actions": "Balleroberungen",
+      "def_duel": "Defensivduelle gewonnen %",
+      "aerial": "Kopfballduelle gewonnen %",
+      "prog_carries": "Progressive Läufe"
+    },
+    "cm": {
+      "duel": "Zweikämpfe gewonnen %",
+      "possWon": "Balleroberungen",
+      "prog_carries": "Progressive Läufe",
+      "forward_passes": "Vorwärtspässe gespielt",
+      "forward_pass": "Vorwärtspässe %",
+      "key_passes": "Schlüsselpässe",
+      "prog_passes": "Progressive Pässe gespielt"
+    },
+    "fw": {
+      "prog_carries": "Progressive Läufe",
+      "dribbles": "Erfolgreiche Dribblings",
+      "npg": "Tore ohne Elfmeter",
+      "xg_xa": "npxG + xA",
+      "assists": "Assists",
+      "key_passes": "Schlüsselpässe",
+      "cross": "Flanken gespielt"
+    },
+    "st": {
+      "npg": "Tore ohne Elfmeter",
+      "npxg": "npxG",
+      "conv": "Torquote",
+      "xa": "Erwartete Assists",
+      "off_duel": "Offensivduelle gewonnen",
+      "touches": "Ballkontakte im Strafraum",
+      "aerial": "Kopfballduelle gewonnen %"
+    }
+  },
+  "metrics": {
+    "gk": {
+      "save": "Paraden%",
+      "aerials": "Kopfbälle gew.",
+      "int": "Abf. (PAdj)",
+      "passes": "Pässe gesp.",
+      "long_pass": "Lang%",
+      "short_pass": "Kurz%",
+      "psxg_ga": "PSxG-GA"
+    },
+    "cb": {
+      "passes": "Pässe gesp.",
+      "forward_pass": "Vorw. Pass%",
+      "prog_passes": "Prog. Pässe",
+      "possWon": "Balleroberungen",
+      "def_duel": "Def. Duelle%",
+      "aerial": "Kopfball%",
+      "prog_carries": "Prog. Läufe"
+    },
+    "fb": {
+      "cross": "Flanken gesp.",
+      "xa": "xA",
+      "prog_passes": "Prog. Pässe",
+      "def_actions": "Balleroberungen",
+      "def_duel": "Def. Duelle%",
+      "aerial": "Kopfball%",
+      "prog_carries": "Prog. Läufe"
+    },
+    "cm": {
+      "duel": "Zweikämpfe%",
+      "possWon": "Balleroberungen",
+      "prog_carries": "Prog. Läufe",
+      "forward_passes": "Vorw. Pässe",
+      "forward_pass": "Vorw. Pass%",
+      "key_passes": "Schlüsselpässe",
+      "prog_passes": "Prog. Pässe"
+    },
+    "fw": {
+      "prog_carries": "Prog. Läufe",
+      "dribbles": "Dribblings gel.",
+      "npg": "Tore o.E.",
+      "xg_xa": "npxG+xA",
+      "assists": "Assists",
+      "key_passes": "Schlüsselpässe",
+      "cross": "Flanken gel."
+    },
+    "st": {
+      "npg": "Tore o.E.",
+      "npxg": "npxG",
+      "conv": "Torquote%",
+      "xa": "xA",
+      "off_duel": "Off. Duelle gew.",
+      "touches": "Kontakte Strafraum",
+      "aerial": "Kopfball%"
+    }
+  },
+  "search": {
+    "age": "Alter",
+    "minutes": "Gespielte Minuten",
+    "button": "Suchen",
+    "no_results": "Keine Spieler gefunden",
+    "instructions_text": "<strong>Suchanleitung</strong><br><br><li>Wähle eine Position und Liga</li><li>Gib minimale Perzentilwerte ein (0-100)</li><li>Filtere nach Alter und Spielminuten</li><li>Klicke auf eine Spaltenüberschrift zum Sortieren</li><li>Klicke auf \"Vorherige\" für Daten der letzten Saison</li>"
+  },
+  "current": "Aktuell",
+  "previous": "Vorherige",
+  "position": {
+    "goalkeepers": "Torwarte",
+    "centre-backs": "Innenverteidiger",
+    "full-backs": "Außenverteidiger",
+    "midfielders": "Mittelfeldspieler",
+    "wingers": "Flügelspieler",
+    "strikers": "Stürmer"
+  }
+}
