@@ -1,0 +1,191 @@
+{
+  "leagues": {
+    "all": "Semua Liga",
+    "top7": "7 Liga Teratas",
+    "top5": "5 Liga Teratas",
+    "belgium": "Belgia",
+    "scotland": "Skotlandia",
+    "austria": "Austria",
+    "switzerland": "Swiss",
+    "turkey": "Turki",
+    "denmark": "Denmark",
+    "sweden": "Swedia",
+    "norway": "Norwegia",
+    "croatia": "Kroasia",
+    "serbia": "Serbia",
+    "czechrepublic": "Republik Ceko",
+    "poland": "Polandia",
+    "ukraine": "Ukraina",
+    "russia": "Rusia",
+    "greece": "Yunani",
+    "israel": "Israel",
+    "japan": "Jepang",
+    "korea": "Korea",
+    "saudiarabia": "Arab Saudi",
+    "unitedstates": "MLS",
+    "mexico": "Meksiko",
+    "brazil": "Brasil",
+    "argentina": "Argentina",
+    "uruguay": "Uruguay",
+    "chile": "Chili",
+    "colombia": "Kolombia",
+    "ecuador": "Ekuador",
+    "paraguay": "Paraguay",
+    "championship": "Championship",
+    "spain": "Segunda División",
+    "serieb": "Serie B",
+    "bundesliga2": "2. Bundesliga",
+    "ligue2": "Ligue 2",
+    "outsidetop7": "Di luar Top 7",
+    "southamerica": "Amerika Selatan",
+    "scandinavia": "Skandinavia",
+    "easterneurope": "Eropa Timur",
+    "uae": "UEA",
+    "australia": "Australia",
+    "slovenia": "Slovenia",
+    "cyprus": "Siprus",
+    "southafrica": "Afrika Selatan",
+    "qatar": "Qatar",
+    "egypt": "Mesir",
+    "morocco": "Maroko",
+    "romania": "Rumania",
+    "bulgaria": "Bulgaria",
+    "hungary": "Hungaria",
+    "slovakia": "Slovakia",
+    "ligaportugal2": "Liga Portugal 2",
+    "leagueone": "League One",
+    "eerstedivisie": "Eerste Divisie",
+    "gulf": "Teluk",
+    "africa": "Afrika",
+    "2nddivisions": "Divisi 2"
+  },
+  "metrics1": {
+    "gk": {
+      "save": "Persentase penyelamatan %",
+      "aerials": "Duel udara dimenangkan",
+      "int": "Intersepsi (PAdj)",
+      "passes": "Umpan berhasil",
+      "long_pass": "Umpan panjang %",
+      "short_pass": "Umpan pendek %",
+      "psxg_ga": "Gol dicegah"
+    },
+    "cb": {
+      "passes": "Umpan berhasil",
+      "forward_pass": "Umpan ke depan %",
+      "prog_passes": "Umpan progresif berhasil",
+      "possWon": "Perebutan bola",
+      "def_duel": "Duel bertahan menang %",
+      "aerial": "Duel udara menang %",
+      "prog_carries": "Membawa bola progresif"
+    },
+    "fb": {
+      "cross": "Umpan silang berhasil",
+      "xa": "Assist yang diharapkan",
+      "prog_passes": "Umpan progresif berhasil",
+      "def_actions": "Perebutan bola",
+      "def_duel": "Duel bertahan menang %",
+      "aerial": "Duel udara menang %",
+      "prog_carries": "Membawa bola progresif"
+    },
+    "cm": {
+      "duel": "Duel menang %",
+      "possWon": "Perebutan bola",
+      "prog_carries": "Membawa bola progresif",
+      "forward_passes": "Umpan ke depan berhasil",
+      "forward_pass": "Umpan ke depan %",
+      "key_passes": "Umpan kunci",
+      "prog_passes": "Umpan progresif berhasil"
+    },
+    "fw": {
+      "prog_carries": "Membawa bola progresif",
+      "dribbles": "Dribel berhasil",
+      "npg": "Gol non-penalti",
+      "xg_xa": "npxG + xA",
+      "assists": "Assist",
+      "key_passes": "Umpan kunci",
+      "cross": "Umpan silang berhasil"
+    },
+    "st": {
+      "npg": "Gol non-penalti",
+      "npxg": "npxG",
+      "conv": "Konversi gol",
+      "xa": "Assist yang diharapkan",
+      "off_duel": "Duel ofensif dimenangkan",
+      "touches": "Sentuhan di kotak",
+      "aerial": "Duel udara menang %"
+    }
+  },
+  "metrics": {
+    "gk": {
+      "save": "Pnylmtn%",
+      "aerials": "Udara menang",
+      "int": "Int. (PAdj)",
+      "passes": "Umpan sks.",
+      "long_pass": "Panjang%",
+      "short_pass": "Pendek%",
+      "psxg_ga": "PSxG-GA"
+    },
+    "cb": {
+      "passes": "Umpan sks.",
+      "forward_pass": "Umpan dpn%",
+      "prog_passes": "Umpan prog.",
+      "possWon": "Perebutan",
+      "def_duel": "Duel bth.%",
+      "aerial": "Udara%",
+      "prog_carries": "Bawa prog."
+    },
+    "fb": {
+      "cross": "Silang sks.",
+      "xa": "xA",
+      "prog_passes": "Umpan prog.",
+      "def_actions": "Perebutan",
+      "def_duel": "Duel bth.%",
+      "aerial": "Udara%",
+      "prog_carries": "Bawa prog."
+    },
+    "cm": {
+      "duel": "Duel%",
+      "possWon": "Perebutan",
+      "prog_carries": "Bawa prog.",
+      "forward_passes": "Umpan dpn",
+      "forward_pass": "Umpan dpn%",
+      "key_passes": "Umpan kunci",
+      "prog_passes": "Umpan prog."
+    },
+    "fw": {
+      "prog_carries": "Bawa prog.",
+      "dribbles": "Dribel sks.",
+      "npg": "NPG",
+      "xg_xa": "npxG+xA",
+      "assists": "Assist",
+      "key_passes": "Umpan kunci",
+      "cross": "Silang sks."
+    },
+    "st": {
+      "npg": "NPG",
+      "npxg": "npxG",
+      "conv": "Konversi%",
+      "xa": "xA",
+      "off_duel": "Duel srgn menang",
+      "touches": "Sentuhan kotak",
+      "aerial": "Udara%"
+    }
+  },
+  "search": {
+    "age": "Usia",
+    "minutes": "Menit dimainkan",
+    "button": "Cari",
+    "no_results": "Tidak ada pemain ditemukan",
+    "instructions_text": "<strong>Petunjuk Pencarian</strong><br><br><li>Pilih posisi dan liga</li><li>Masukkan nilai persentil minimum (0-100)</li><li>Filter berdasarkan usia dan menit dimainkan</li><li>Klik header kolom untuk mengurutkan</li><li>Klik \"Sebelumnya\" untuk data musim lalu</li>"
+  },
+  "current": "Saat ini",
+  "previous": "Sebelumnya",
+  "position": {
+    "goalkeepers": "Penjaga gawang",
+    "centre-backs": "Bek tengah",
+    "full-backs": "Bek sayap",
+    "midfielders": "Gelandang",
+    "wingers": "Pemain sayap",
+    "strikers": "Penyerang"
+  }
+}
