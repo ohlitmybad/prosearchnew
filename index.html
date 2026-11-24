@@ -113,12 +113,26 @@
 
     <div class="results-panel">
       <div class="results-toolbar" id="resultsToolbar" hidden>
+        <div class="view-toggle" id="viewToggle">
+          <button type="button" class="view-toggle-btn active" data-view="table" aria-pressed="true">
+            <iconify-icon icon="mdi:table" width="16" height="16"></iconify-icon>
+            <span data-i18n="views.table">Table</span>
+          </button>
+          <div class="btn-tooltip view-venn-wrap" id="vennToggleWrap">
+            <button type="button" class="view-toggle-btn" data-view="venn" aria-pressed="false">
+              <iconify-icon icon="mdi:set-center" width="16" height="16"></iconify-icon>
+              <span data-i18n="views.venn">Venn</span>
+            </button>
+            <span class="btn-tooltip-text" data-i18n="venn.needThree">Select 2 or 3 metrics</span>
+          </div>
+        </div>
         <div class="results-count" id="resultsCount"></div>
         <input type="search" id="playerSearch" placeholder="Search player or team" data-i18n="search.playerPlaceholder" autocomplete="off" spellcheck="false">
       </div>
       <div id="tableWrapper">
         <div id="resultsContainer"></div>
       </div>
+      <div id="vennWrapper" hidden></div>
     </div>
   </div>
 
