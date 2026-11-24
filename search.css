@@ -614,6 +614,37 @@ input[type="number"]:focus {
   gap: 8px;
 }
 
+.range-label-row label {
+  flex: 1;
+  min-width: 0;
+}
+
+.range-remove {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-right: -4px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-color);
+  opacity: 0.45;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: opacity 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.range-remove:hover,
+.range-remove:focus-visible {
+  opacity: 1;
+  color: #F62681;
+  background-color: rgba(246, 38, 129, 0.1);
+  outline: none;
+}
+
 .range-readout,
 .range-value {
   -webkit-appearance: none;
